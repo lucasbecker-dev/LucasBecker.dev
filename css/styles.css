@@ -1,0 +1,136 @@
+:root {
+  --slide-and-fade-in-timer: 500ms;
+}
+
+* {
+  text-align: center;
+}
+
+/* ELEMENTS */
+/************/
+body {
+  background-color: var(--deep-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+nav {
+  background-color: var(--top-color);
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+  position: fixed;
+  top: 0;
+  opacity: 80%;
+}
+
+a {
+  background-color: inherit;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: var(--medium-color);
+  border-width: 2px;
+  border-style: ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
+
+p,
+a {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* CLASSES */
+/***********/
+.slide-and-fade-in {
+  opacity: 0;
+}
+
+.fade-in-element {
+  animation: fade-in var(--slide-and-fade-in-timer);
+}
+
+.slide-in-from-left-element {
+  animation: slide-in-from-left var(--slide-and-fade-in-timer);
+}
+
+.slide-in-from-right-element {
+  animation: slide-in-from-right var(--slide-and-fade-in-timer);
+}
+
+/* IDs */
+/*******/
+
+/* ANIMATIONS */
+/**************/
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-from-left {
+  from {
+    margin-right: 30px;
+  }
+  to {
+    margin-right: 0px;
+  }
+}
+
+@keyframes slide-in-from-right {
+  from {
+    margin-left: 30px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+/* MEDIA QUERIES */
+/*****************/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --deep-color: #1e1e1e;
+    --medium-color: #404040;
+    --top-color: #707070;
+    --text-color: #d4d4d4;
+    --green-color: #6a9955;
+    --dark-blue-color: #569cd6;
+    --light-blue-color: #9cdcfe;
+    --red-color: #ce9178;
+    --teal-color: #b5cea8;
+    --yellow-color: #d7ba7d;
+    --purple-color: #c586c0;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --deep-color: #ffffff;
+    --medium-color: #d3d3d3;
+    --top-color: #939393;
+    --text-color: #000000;
+    --green-color: #008000;
+    --dark-blue-color: #0000ff;
+    --light-blue-color: #0070c1;
+    --red-color: #a31515;
+    --teal-color: #098658;
+    --yellow-color: #795e26;
+    --purple-color: #af00db;
+  }
+}
