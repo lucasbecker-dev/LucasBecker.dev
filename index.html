@@ -1,3 +1,4 @@
+<!-- Copyright ©️ Lucas Becker 2021. All right reserved. -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -7,14 +8,17 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Lucas Becker's Resume</title>
+    <title>Lucas Becker</title>
     <meta
       name="description"
       content="Lucas Becker's resume for full-stack web development and software engineering."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="js/animation-controller.js" async defer></script>
+    <script src="js/color-scheme-controller.js" async defer></script>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="prerender" type="image/svg" href="img/dark-theme/default.svg" />
+    <link rel="prerender" type="image/svg" href="img/light-theme/default.svg" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,19 +35,28 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-
     <header>
       <nav>
-        <a href="#">Test</a>
-        <a></a>
-        <a></a>
+        <p id="nav-text">Lucas Becker</p>
+        <a href="#about">About</a>
+        <a href="#CV">CV</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <img title="Lucas Becker Software Engineer" alt="image of the name Lucas Becker, a subtitle that reads software engineer, and a blue logo resembling a terminal prompt" id="header-img" class="fade-in" />
     </header>
     <main>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section id="about" class="dark-bg">
+        <h1 id="about-h1">Lucas Becker</h1>
+      </section>
+      <section id="CV" class="light-bg"></section>
+      <section id="skills" class="dark-bg"></section>
+      <section id="interests" class="light-bg"></section>
+      <section id="contact" class="dark-bg"></section>
     </main>
-    <footer></footer>
+    <footer>
+      <p id="copyright-text">Copyright ©️ Lucas Becker 2021. All rights reserved.</p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,1 @@
+// Copyright ©️ Lucas Becker 2021. All right reserved.
