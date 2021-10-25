@@ -80,6 +80,7 @@ footer {
 .dark-light-icons {
   width: 16px;
   height: 16px;
+  filter: var(--text-color);
 }
 
 .transparent {
@@ -87,13 +88,13 @@ footer {
 }
 
 .fade-in {
-  animation: fade-in 3000ms;
+  animation: fade-in 5000ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
 
 .grow {
-  animation: grow 3000ms;
+  animation: grow 5000ms;
 }
 
 .fade-in-element {
@@ -140,17 +141,6 @@ footer {
   color: var(--text-color);
 }
 
-/* IDs */
-/*******/
-#nav-text {
-  font-family: "Roboto Slab", serif;
-  margin: 0.5% 5%;
-  color: var(--text-color);
-}
-
-#header-img {
-  height: 100vh;
-}
 
 .switch {
   position: relative;
@@ -212,6 +202,20 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* IDs */
+/*******/
+#nav-text {
+  font-family: "Roboto Slab", serif;
+  margin: 0.5% 5%;
+  color: var(--text-color);
+}
+
+#header-img {
+  height: 100vh;
+  max-width: 100vw;
+}
+
 
 /* ANIMATIONS */
 /**************/
