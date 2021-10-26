@@ -8,6 +8,7 @@ const styleSheetRules = styleSheet.cssRules;
 const sliderRule = getCssSliderRule();
 const bannerImg = document.getElementById('header-img');
 const osTheme = window.matchMedia("(prefers-color-scheme: dark)");
+const sliderCssSelectorText = ".slider:before";
 const darkBannerImgPath = "../img/dark-theme/default.svg";
 const lightBannerImgPath = "../img/light-theme/default.svg";
 const darkThemeCssRule = ':root {--deep-color: #1e1e1e; --medium-color: #404040; --top-color: #707070; --text-color: #d4d4d4; --green-color: #6a9955; --dark-blue-color: #569cd6; --light-blue-color: #9cdcfe; --red-color: #ce9178; --teal-color: #b5cea8; --yellow-color: #d7ba7d; --purple-color: #c586c0;}';
@@ -64,15 +65,17 @@ function setTheme(theme) {
 
 function getCssSliderRule() {
   for (let i = 0; i < styleSheetRules.length; ++i) {
-    if (styleSheetRules[i].selectorText === '.slider:before') {
+    if (styleSheetRules[i].selectorText === sliderCssSelectorText) {
       console.log(styleSheetRules[i]);
+      return styleSheetRules[i];
     }
   }
-  return styleSheetRules[i];
+  console.log("CSS selector", sliderCssSelectorText, "was not found in the style sheet.");
+  return -1;
 }
 
-function setCssSliderInitialPosition(cssSliderRule, theme) {
+function setCssSliderInitialPosition(cssSliderRule) {
+  if (cssSliderRule < 0) return;
   if (darkModeEnabled) {
-
   }
 }
