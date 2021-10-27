@@ -21,12 +21,12 @@ initializeTheme();
 
 // funcs
 function initializeTheme() {
-  if (osTheme.matches) {
+  if (osTheme.matches) { // DARK THEME
     darkModeEnabled = true;
     bannerImg.src = darkBannerImgPath;
     themeRuleIndex = styleSheet.insertRule(darkThemeCssRule);
     setCssSliderInitialPosition(getCssSliderRule(), 'dark');
-  } else {
+  } else { // LIGHT THEME
     darkModeEnabled = false;
     bannerImg.src = lightBannerImgPath;
     themeRuleIndex = styleSheet.insertRule(lightThemeCssRule);
@@ -45,14 +45,15 @@ function switchTheme() {
 function setTheme(theme) {
   switch (theme) {
     case 'dark':
-      darkModeEnabled = true;
+      darkModeEnabled = true; // must be first
       bannerImg.src = darkBannerImgPath;
       styleSheet.deleteRule(lightThemeCssRule, themeRuleIndex);
       themeRuleIndex = styleSheet.insertRule(darkThemeCssRule);
+      let cssSliderRule = getCssSliderRule();
       setCssSliderInitialPosition(getCssSliderRule(), 'dark');
       break;
     case 'light':
-      darkModeEnabled = false;
+      darkModeEnabled = false; // must be first
       bannerImg.src = lightBannerImgPath;
       styleSheet.deleteRule(darkThemeCssRule, themeRuleIndex);
       themeRuleIndex = styleSheet.insertRule(lightThemeCssRule);
@@ -69,6 +70,7 @@ function getCssSliderRule() {
       console.log(styleSheetRules[i]);
       return styleSheetRules[i];
     }
+
   }
   console.log("CSS selector", sliderCssSelectorText, "was not found in the style sheet.");
   return -1;
@@ -76,6 +78,11 @@ function getCssSliderRule() {
 
 function setCssSliderInitialPosition(cssSliderRule) {
   if (cssSliderRule < 0) return;
+  // TODO: Implement setting CSS Dark Theme Slider initial position
   if (darkModeEnabled) {
   }
+}
+
+function setCssSliderPosition(cssSliderRule, theme) {
+  // TODO: Implement dynamic setting of CSS Dark Theme Slider Position
 }
