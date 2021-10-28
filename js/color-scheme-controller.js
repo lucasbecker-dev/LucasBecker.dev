@@ -14,6 +14,11 @@ const lightBannerImgPath = "../img/light-theme/default.svg";
 const darkThemeCssRule = ':root {--deep-color: #1e1e1e; --medium-color: #404040; --top-color: #707070; --text-color: #d4d4d4; --green-color: #6a9955; --dark-blue-color: #569cd6; --light-blue-color: #9cdcfe; --red-color: #ce9178; --teal-color: #b5cea8; --yellow-color: #d7ba7d; --purple-color: #c586c0;}';
 const lightThemeCssRule = ':root {--deep-color: #ffffff; --medium-color: #d3d3d3; --top-color: #939393; --text-color: #000000; --green-color: #008000; --dark-blue-color: #0000ff; --light-blue-color: #0070c1; --red-color: #a31515; --teal-color: #098658; --yellow-color: #795e26; --purple-color: #af00db;}';
 
+// Site color scheme options
+const themes = {
+  dark,
+  light,
+};
 
 setCssSliderInitialPosition(getCssSliderRule());
 initializeTheme();
@@ -25,39 +30,39 @@ function initializeTheme() {
     darkModeEnabled = true;
     bannerImg.src = darkBannerImgPath;
     themeRuleIndex = styleSheet.insertRule(darkThemeCssRule);
-    setCssSliderInitialPosition(getCssSliderRule(), 'dark');
+    setCssSliderInitialPosition(getCssSliderRule(), themes.dark);
   } else { // LIGHT THEME
     darkModeEnabled = false;
     bannerImg.src = lightBannerImgPath;
     themeRuleIndex = styleSheet.insertRule(lightThemeCssRule);
-    setCssSliderInitialPosition(getCssSliderRule(), 'light');
+    setCssSliderInitialPosition(getCssSliderRule(), themes.light);
   }
 }
 
 function switchTheme() {
   if (darkModeEnabled) {
-    setTheme('light');
+    setTheme(themes.light);
   } else {
-    setTheme('dark');
+    setTheme(themes.dark);
   }
 }
 
 function setTheme(theme) {
+  let cssSliderRule = getCssSliderRule();
   switch (theme) {
-    case 'dark':
+    case themes.dark:
       darkModeEnabled = true; // must be first
       bannerImg.src = darkBannerImgPath;
       styleSheet.deleteRule(lightThemeCssRule, themeRuleIndex);
       themeRuleIndex = styleSheet.insertRule(darkThemeCssRule);
-      let cssSliderRule = getCssSliderRule();
-      setCssSliderInitialPosition(getCssSliderRule(), 'dark');
+      setCssSliderInitialPosition(cssSliderRule, themes.dark);
       break;
-    case 'light':
+    case themes.light:
       darkModeEnabled = false; // must be first
       bannerImg.src = lightBannerImgPath;
       styleSheet.deleteRule(darkThemeCssRule, themeRuleIndex);
       themeRuleIndex = styleSheet.insertRule(lightThemeCssRule);
-      setCssSliderInitialPosition(getCssSliderRule(), 'light');
+      setCssSliderInitialPosition(cssSliderRule, themes.light);
       break;
     default:
       console.log("setTheme() received:", theme, "which is not a valid theme");
