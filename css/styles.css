@@ -3,7 +3,17 @@
 /* GLOBALS */
 /***********/
 :root {
-  --deep-color: #ffffff; --medium-color: #d3d3d3; --top-color: #939393; --text-color: #000000; --green-color: #008000; --dark-blue-color: #0000ff; --light-blue-color: #0070c1; --red-color: #a31515; --teal-color: #098658; --yellow-color: #795e26; --purple-color: #af00db;
+  --deep-color: #ffffff;
+  --medium-color: #d3d3d3;
+  --top-color: #939393;
+  --text-color: #000000;
+  --green-color: #008000;
+  --dark-blue-color: #0000ff;
+  --light-blue-color: #0070c1;
+  --red-color: #a31515;
+  --teal-color: #098658;
+  --yellow-color: #795e26;
+  --purple-color: #af00db;
 }
 
 html {
@@ -20,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  
+
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -151,7 +161,6 @@ footer {
   color: var(--text-color);
 }
 
-
 .switch {
   position: relative;
   display: inline-block;
@@ -237,8 +246,6 @@ input:checked + .slider:before {
   align-items: center;
   margin-left: 8px;
 }
-
-
 
 /* ANIMATIONS */
 /**************/
