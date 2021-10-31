@@ -87,6 +87,7 @@ function setCssSliderInitialPosition(cssSliderRule) {
   if (cssSliderRule < 0) return;
   // TODO: Implement setting CSS Dark Theme Slider initial position
   if (darkModeEnabled) {
+
   }
 }
 
