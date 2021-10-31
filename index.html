@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Lucas Becker</title>
+  <title>LucasBecker.dev</title>
   <meta name="description"
     content="Lucas Becker's personal portfolio website for full-stack web development and software engineering." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,17 +32,19 @@
   <header id="header">
     <!-- Navbar -->
     <nav id="nav-bar">
-      <p id="nav-text">Lucas Becker</p>
+      <img src="/img/dark-theme/isolated-monochrome-white.svg" id="nav-text" />
       <a href="#about" class="nav-item">About</a>
       <a href="#CV" class="nav-item">CV</a>
       <a href="#skills" class="nav-item">Skills</a>
       <a href="#contact" class="nav-item border-right">Contact</a>
-      <img id="light-mode-icon" class="dark-light-icons" alt="sun icon" src="../img/icons/sun-regular.svg" />
-      <label id="dark-light-toggle" class="switch">
-        <input type="checkbox" id="dark-light-checkbox" onclick="switchTheme()">
-        <span id="dark-light-toggle-bg" class="slider round"></span>
-      </label>
-      <img id="dark-mode-icon" class="dark-light-icons" alt="moon icon" src="../img/icons/moon-regular.svg" />
+      <div id="theme-toggle">
+        <img id="light-mode-icon" class="dark-light-icons" alt="sun icon" src="../img/icons/sun-regular.svg" />
+        <label id="dark-light-toggle" class="switch">
+          <input type="checkbox" id="dark-light-checkbox" onclick="switchTheme()">
+          <span id="dark-light-toggle-bg" class="slider round"></span>
+        </label>
+        <img id="dark-mode-icon" class="dark-light-icons" alt="moon icon" src="../img/icons/moon-regular.svg" />
+      </div>
     </nav>
     <img
       alt="image of the name Lucas Becker, a subtitle that reads software engineer, and a blue logo resembling a terminal prompt"
