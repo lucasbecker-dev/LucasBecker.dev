@@ -2,6 +2,10 @@
 
 /* GLOBALS */
 /***********/
+:root {
+  --deep-color: #ffffff; --medium-color: #d3d3d3; --top-color: #939393; --text-color: #000000; --green-color: #008000; --dark-blue-color: #0000ff; --light-blue-color: #0070c1; --red-color: #a31515; --teal-color: #098658; --yellow-color: #795e26; --purple-color: #af00db;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -120,16 +124,19 @@ footer {
 
 .nav-item {
   background-color: var(--medium-color);
-  transition: background-color 300ms;
+  transition: background-color 0ms;
   text-decoration: none;
   color: var(--light-blue-color);
   width: 50px;
   min-width: fit-content;
-  padding: 0.75%;
+  padding: 10px;
   border-color: var(--deep-color);
-  border-width: 0px 1px;
-  margin: 0px -1px;
+  border-width: 0 0 0 1px;
   border-style: solid;
+}
+
+.border-right {
+  border-width: 0 1px 0 1px;
 }
 
 .nav-item:hover {
@@ -146,7 +153,7 @@ footer {
 .switch {
   position: relative;
   display: inline-block;
-  width: 32px;
+  min-width: 32px;
   height: 20px;
   margin: 0 2px;
 }
