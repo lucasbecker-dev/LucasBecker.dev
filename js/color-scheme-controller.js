@@ -5,10 +5,10 @@ let darkModeEnabled = false;
 let themeRuleIndex = 0;
 const styleSheet = document.styleSheets[0];
 const styleSheetRules = styleSheet.cssRules;
-const sliderRule = getCssSliderRule();
 const bannerImg = document.getElementById('header-img');
 const osTheme = window.matchMedia("(prefers-color-scheme: dark)");
-const sliderCssSelectorText = ".slider:before";
+const sliderCssSelectorText = ".slider::before";
+const sliderRule = getCssSliderRule();
 const darkBannerImgPath = "../img/dark-theme/default.svg";
 const lightBannerImgPath = "../img/light-theme/default.svg";
 const darkThemeCssRule = ':root {--deep-color: #1e1e1e; --medium-color: #404040; --top-color: #707070; --text-color: #d4d4d4; --green-color: #6a9955; --dark-blue-color: #569cd6; --light-blue-color: #9cdcfe; --red-color: #ce9178; --teal-color: #b5cea8; --yellow-color: #d7ba7d; --purple-color: #c586c0;}';
@@ -16,12 +16,12 @@ const lightThemeCssRule = ':root {--deep-color: #ffffff; --medium-color: #d3d3d3
 
 // site color scheme options
 const themes = {
-  dark,
-  light,
+  dark: "dark",
+  light: "light",
 };
 
 // main
-setCssSliderInitialPosition(getCssSliderRule());
+setCssSliderInitialPosition(sliderRule);
 initializeTheme();
 // end main
 
@@ -32,12 +32,12 @@ function initializeTheme() {
     darkModeEnabled = true;
     bannerImg.src = darkBannerImgPath;
     themeRuleIndex = styleSheet.insertRule(darkThemeCssRule);
-    setCssSliderInitialPosition(getCssSliderRule());
+    setCssSliderInitialPosition(sliderRule);
   } else { // LIGHT THEME
     darkModeEnabled = false;
     bannerImg.src = lightBannerImgPath;
     themeRuleIndex = styleSheet.insertRule(lightThemeCssRule);
-    setCssSliderInitialPosition(getCssSliderRule());
+    setCssSliderInitialPosition(sliderRule);
   }
 }
 
@@ -73,11 +73,10 @@ function setTheme(theme) {
 
 function getCssSliderRule() {
   for (let i = 0; i < styleSheetRules.length; ++i) {
-    if (styleSheetRules[i].cssText === sliderCssSelectorText) {
-      console.log(styleSheetRules[i]);
+    if (styleSheetRules[i].selectorText === sliderCssSelectorText) {
+      console.log(styleSheetRules[i].selectorText);
       return styleSheetRules[i];
     }
-
   }
   console.log("CSS selector", sliderCssSelectorText, "was not found in the style sheet.");
   return -1;
