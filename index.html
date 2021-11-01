@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -42,10 +42,12 @@
           src="/img/dark-theme/isolated-monochrome-white.svg"
           id="nav-text"
         />
-        <a href="#about" class="nav-item">About</a>
-        <a href="#CV" class="nav-item">CV</a>
-        <a href="#skills" class="nav-item">Skills</a>
-        <a href="#contact" class="nav-item border-right">Contact</a>
+        <a href="#about" class="nav-item text-font-size">About</a>
+        <a href="#CV" class="nav-item text-font-size">CV</a>
+        <a href="#skills" class="nav-item text-font-size">Skills</a>
+        <a href="#contact" class="nav-item border-right text-font-size"
+          >Contact</a
+        >
         <div id="theme-toggle">
           <img
             id="light-mode-icon"
@@ -80,9 +82,34 @@
     <!-- Main -->
     <main id="main">
       <section id="about" class="light-bg">
-        <h1 id="about-h1">Lucas Becker</h1>
+        <header
+          id="main-about-title-div"
+          class="flex-row-wrap space-around light-card"
+        >
+          <img
+            src="img/profile-pic-FINAL-SQUARE.jpg"
+            class="profile-pic light-box-shadow"
+          />
+          <div class="flex-col-nowrap centered">
+            <h1 class="about-h1 small-text-shadow title-font-size">
+              Lucas Becker
+            </h1>
+            <div id="about-title-subtext" class="green-color">
+              <p>// Software engineer</p>
+              <p>// Full-stack web developer</p>
+              <p>// Freelancer</p>
+              <p>// Passionate about all things programming</p>
+              <p>// Proud husband and father</p>
+            </div>
+          </div>
+        </header>
+        <h2 class="about-h2 subtitle-font-size">Background</h2>
+        <h2 class="about-h2 subtitle-font-size">Hobbies</h2>
+        <h2 class="about-h2 subtitle-font-size">Projects</h2>
       </section>
       <section id="CV" class="dark-bg"></section>
+      <h1 class="CV-h1">Credentials</h1>
+      <h2 class="CV-h2"></h2>
       <section id="skills" class="light-bg"></section>
       <section id="contact" class="dark-bg"></section>
     </main>
