@@ -25,12 +25,8 @@ const themes = {
   light: "light",
 };
 
-// main
-initializeTheme();
-// end main
-
 // funcs
-function initializeTheme() {
+const initializeTheme = () => {
   if (osTheme.matches) {
     // DARK THEME
     clickThemeToggle();
@@ -38,21 +34,21 @@ function initializeTheme() {
     // LIGHT THEME
     setTheme(themes.light);
   }
-}
+};
 
-function clickThemeToggle() {
+const clickThemeToggle = () => {
   toggleButton.dispatchEvent(new MouseEvent("click"));
-}
+};
 
-function switchTheme() {
+const switchTheme = () => {
   if (darkModeEnabled) {
     setTheme(themes.light);
   } else {
     setTheme(themes.dark);
   }
-}
+};
 
-function setTheme(theme) {
+const setTheme = (theme) => {
   switch (theme) {
     case themes.dark:
       darkModeEnabled = true; // must be first
@@ -71,4 +67,8 @@ function setTheme(theme) {
     default:
       console.log("setTheme() received:", theme, "which is not a valid theme");
   }
-}
+};
+
+// "main"
+initializeTheme();
+// end main
