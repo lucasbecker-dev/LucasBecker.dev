@@ -150,6 +150,7 @@ footer {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   padding: 2.5%;
   width: 40vw;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   min-width: 40vw;
   display: inline-flex;
@@ -255,6 +256,8 @@ footer {
   text-decoration: none;
   color: var(--light-blue-color);
   width: 50px;
+  min-width: -moz-fit-content;
+  min-width: -webkit-fill-available;
   min-width: fit-content;
   padding: 10px;
   border-color: var(--deep-color);
@@ -354,6 +357,8 @@ input:checked + .slider:before {
 }
 
 #nav-bar {
+  min-width: -moz-fit-content;
+  min-width: -webkit-fill-available;
   min-width: fit-content;
 }
 
