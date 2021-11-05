@@ -303,6 +303,8 @@ footer {
   right: 0;
   bottom: 0;
   background-color: var(--top-color);
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -315,6 +317,8 @@ footer {
   left: 2px;
   bottom: 2px;
   background-color: var(--text-color);
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -328,6 +332,8 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
+  -o-transform: translateX(12px);
+  -moz-transform: translateX(12px);
   -webkit-transform: translateX(12px);
   -ms-transform: translateX(12px);
   transform: translateX(12px);
@@ -417,7 +423,7 @@ input:checked + .slider:before {
     margin-left: 30px;
   }
   to {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 

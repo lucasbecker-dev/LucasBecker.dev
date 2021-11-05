@@ -4,29 +4,25 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>LucasBecker.dev</title>
-    <meta
-      name="description"
-      content="Lucas Becker's personal portfolio website for full-stack web development and software engineering."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap"
-      rel="stylesheet"
-      crossorigin="use-credentials"
-    />
-  </head>
+<html lang="en" dir="ltr">
 
-  <body>
-    <!--[if lt IE 7]>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>LucasBecker.dev</title>
+  <meta name="description"
+    content="Lucas Becker's personal website and portfolio for full-stack web development and software engineering." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap"
+    rel="stylesheet" crossorigin="use-credentials" />
+</head>
+
+<body>
+  <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an
         <strong>outdated</strong>
@@ -35,109 +31,75 @@
         to improve your experience.
       </p>
     <![endif]-->
-    <!-- Header -->
-    <header id="header">
-      <!-- Navbar -->
-      <nav id="nav-bar" role="navigation" aria-roledescription="nav bar">
-        <img
-          src="/img/dark-theme/isolated-monochrome-white.svg"
-          alt="Lucas Becker"
-          id="nav-text"
-        />
-        <a href="#about" class="nav-item text-font-size">About</a>
-        <a href="#CV" class="nav-item text-font-size">CV</a>
-        <a href="#skills" class="nav-item text-font-size">Skills</a>
-        <a href="#contact" class="nav-item border-right text-font-size"
-          >Contact</a
-        >
-        <div id="theme-toggle">
-          <img
-            id="light-mode-icon"
-            class="dark-light-icons"
-            alt="sun icon for light theme"
-            src="../img/icons/sun-regular.svg"
-          />
-          <label id="dark-light-toggle" class="switch">
-            <input
-              title="Toggle Light or Dark Theme"
-              type="checkbox"
-              id="dark-light-checkbox"
-              onclick="switchTheme()"
-            />
-            <span id="dark-light-toggle-bg" class="slider round"></span>
-          </label>
-          <img
-            id="dark-mode-icon"
-            class="dark-light-icons"
-            alt="moon icon for dark theme"
-            src="../img/icons/moon-regular.svg"
-          />
-        </div>
-      </nav>
-      <img
-        alt="image of the name Lucas Becker, a subtitle that reads software engineer, and a blue logo resembling a terminal prompt"
-        id="header-img"
-        class="fade-in"
-        type="image/svg"
-        src="../img/dark-theme/default.svg"
-      />
-    </header>
-    <!-- Main -->
-    <main id="main">
-      <section id="about" class="light-bg">
-        <header
-          id="main-about-title-div"
-          class="flex-row-wrap space-around light-card"
-        >
-          <img
-            src="img/profile-pic-FINAL-SQUARE-min.jpg"
-            alt="Lucas Becker's profile picture"
-            class="profile-pic light-box-shadow"
-            height="1467"
-            width="1467"
-          />
-          <div id="about-title-box" class="flex-col-nowrap">
-            <h1 class="about-h1 small-text-shadow title-font-size">
-              Lucas&nbsp;Becker
-            </h1>
-            <div id="about-title-subtext" class="green-color">
-              <p>// Software engineer</p>
-              <p>// Full-stack web developer</p>
-              <p>// Freelancer</p>
-              <p>// Passion for programming</p>
-              <p>// Proud husband and father</p>
-            </div>
+  <!-- Header -->
+  <header id="header">
+    <!-- Navbar -->
+    <nav id="nav-bar" role="navigation" aria-roledescription="nav bar">
+      <img src="/img/dark-theme/isolated-monochrome-white.svg" alt="Lucas Becker" id="nav-text" />
+      <a href="#about" class="nav-item text-font-size">About</a>
+      <a href="#CV" class="nav-item text-font-size">CV</a>
+      <a href="#skills" class="nav-item text-font-size">Skills</a>
+      <a href="#contact" class="nav-item border-right text-font-size">Contact</a>
+      <div id="theme-toggle">
+        <img id="light-mode-icon" class="dark-light-icons" alt="sun icon for light theme"
+          src="../img/icons/sun-regular.svg" />
+        <label id="dark-light-toggle" class="switch">
+          <input title="Toggle Light or Dark Theme" type="checkbox" id="dark-light-checkbox" onclick="switchTheme()" />
+          <span id="dark-light-toggle-bg" class="slider round"></span>
+        </label>
+        <img id="dark-mode-icon" class="dark-light-icons" alt="moon icon for dark theme"
+          src="../img/icons/moon-regular.svg" />
+      </div>
+    </nav>
+    <img
+      alt="image of the name Lucas Becker, a subtitle that reads software engineer, and a blue logo resembling a terminal prompt"
+      id="header-img" class="fade-in" type="image/svg" src="../img/dark-theme/default.svg" />
+  </header>
+  <!-- Main -->
+  <main id="main">
+    <section id="about" class="light-bg">
+      <header id="main-about-title-div" class="flex-row-wrap space-around light-card">
+        <img src="img/profile-pic-FINAL-SQUARE-min.jpg" alt="Lucas Becker's profile picture"
+          class="profile-pic light-box-shadow" height="1467" width="1467" />
+        <div id="about-title-box" class="flex-col-nowrap">
+          <h1 class="about-h1 small-text-shadow title-font-size">
+            Lucas&nbsp;Becker
+          </h1>
+          <div id="about-title-subtext" class="green-color">
+            <p>// Software engineer</p>
+            <p>// Full-stack web developer</p>
+            <p>// Freelancer</p>
+            <p>// Passion for programming</p>
+            <p>// Proud father</p>
           </div>
-        </header>
-        <h2 class="about-h2 subtitle-font-size">Background</h2>
-        <h2 class="about-h2 subtitle-font-size">Hobbies</h2>
-        <h2 class="about-h2 subtitle-font-size">Projects</h2>
-      </section>
-      <section id="CV" class="dark-bg"></section>
-      <h1 class="CV-h1">Credentials</h1>
-      <h2 class="CV-h2">Education</h2>
-      <h2 class="CV-h2">Certifications</h2>
-      <h2 class="CV-h2">Project Highlights</h2>
-      <section id="skills" class="light-bg"></section>
-      <section id="contact" class="dark-bg"></section>
-    </main>
-    <!-- Footer -->
-    <footer id="footer">
-      <small id="copyright-text" class="footer-item">
-        Copyright&nbsp;&copy;&nbsp;Lucas&nbsp;Becker&nbsp;2021.&nbsp;All&nbsp;rights&nbsp;reserved.
-      </small>
-      <small id="icon-attribution" class="footer-item">
-        Icons&nbsp;by
-        <a
-          href="https://fontawesome.com/license"
-          id="fontawesome-license"
-          class="footer-item"
-          >Font&nbsp;Awesome
-        </a>
-      </small>
-    </footer>
-    <!-- Scripts -->
-    <script src="js/animation-controller.js"></script>
-    <script src="js/color-scheme-controller.js"></script>
-  </body>
+        </div>
+      </header>
+      <h2 class="about-h2 subtitle-font-size">Background</h2>
+      <h2 class="about-h2 subtitle-font-size">Hobbies</h2>
+      <h2 class="about-h2 subtitle-font-size">Projects</h2>
+    </section>
+    <section id="CV" class="dark-bg"></section>
+    <h1 class="CV-h1">Credentials</h1>
+    <h2 class="CV-h2">Education</h2>
+    <h2 class="CV-h2">Certifications</h2>
+    <h2 class="CV-h2">Project Highlights</h2>
+    <section id="skills" class="light-bg"></section>
+    <section id="contact" class="dark-bg"></section>
+  </main>
+  <!-- Footer -->
+  <footer id="footer">
+    <small id="copyright-text" class="footer-item">
+      Copyright&nbsp;&copy;&nbsp;Lucas&nbsp;Becker&nbsp;2021.&nbsp;All&nbsp;rights&nbsp;reserved.
+    </small>
+    <small id="icon-attribution" class="footer-item">
+      Icons&nbsp;by
+      <a href="https://fontawesome.com/license" id="fontawesome-license" class="footer-item">Font&nbsp;Awesome
+      </a>
+    </small>
+  </footer>
+  <!-- Scripts -->
+  <script src="js/animation-controller.js"></script>
+  <script src="js/color-scheme-controller.js"></script>
+</body>
+
 </html>
