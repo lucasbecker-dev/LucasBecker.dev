@@ -1,5 +1,9 @@
 /* Copyright (c) Lucas Becker 2021. All right reserved. */
 
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 /* GLOBALS */
 /***********/
 :root {
