@@ -28,10 +28,11 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!--Navbar-->
-    <nav class="navbar" role="navigation" aria-label="main navigation" id="top-of-page">
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation" id="top-of-page">
         <div class="navbar-brand">
+
             <a class="navbar-item" href="#top-of-page">
-                <img src="./img/light-theme/isolated-monochrome-black.svg" width="112" height="28">
+                <img src="./img/dark-theme/default-monochrome.svg" width="164" height="32">
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -41,99 +42,89 @@
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbar-items" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
-                    Home
+                <a class="navbar-item" href="#about-section">
+                    About
                 </a>
 
-                <a class="navbar-item">
-                    Documentation
+                <a class="navbar-item" href="#credential-section">
+                    CV
                 </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
+                <a class="navbar-item" href="#project-section">
+                    Projects
+                </a>
 
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
                         <a class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a class="button is-light">
-                            Log in
+                            <strong>Contact Me</strong>
                         </a>
                     </div>
                 </div>
+
             </div>
+
+            <div class="navbar-end">
+            </div>
+
         </div>
     </nav>
     <!--End of Navbar-->
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World
-            </h1>
-            <p class="subtitle">
-                My first website with <strong>Bulma</strong>!
-            </p>
-        </div>
-    </section>
+
     <!--Contact Section-->
-    <section class="section" id="contact-me">
+    <section class="section" id="contact-me-section">
         <form>
+            <!--Name input-->
             <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                <label class="label" for="name-input">Name</label>
+                <div class="control has-icons-left">
+                    <input class="input" id="name-input" type="text" placeholder="Name" autocomplete="name" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-handshake"></i>
+                    </span>
                 </div>
             </div>
+
+            <!--Email input-->
             <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input is-danger" type="email" placeholder="Email input" />
+                <label class="label" for="email-input">Email</label>
+                <div class="control has-icons-left">
+                    <input class="input" id="email-input" type="email" placeholder="Email" autocomplete="email"
+                        required />
                     <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                     </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </span>
                 </div>
-                <p class="help is-danger">This email is invalid</p>
             </div>
 
+            <!--Phone input-->
             <div class="field">
-                <label class="label">Subject</label>
+                <label class="label" for="tel-input">Phone</label>
+                <div class="control has-icons-left">
+                    <input class="input" id="tel-input" type="tel" placeholder="Phone number" autocomplete="tel" />
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-mobile-alt"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!--Preferred contact method-->
+            <div class="field">
+                <label class="label">Preferred Contact Method</label>
                 <div class="control">
                     <div class="select">
                         <select>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
+                            <option>Email</option>
+                            <option>Text</option>
+                            <option>Call</option>
                         </select>
                     </div>
                 </div>
             </div>
 
+            <!--Reason for contact-->
             <div class="field">
                 <label class="label">Message</label>
                 <div class="control">
@@ -141,38 +132,15 @@
                 </div>
             </div>
 
-            <div class="field">
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        I agree to the <a href="#">terms and conditions</a>
-                    </label>
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="question">
-                        Yes
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="question">
-                        No
-                    </label>
-                </div>
-            </div>
-
+            <!--Submit Contact Form Button-->
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button is-link">Submit</button>
-                </div>
-                <div class="control">
-                    <button class="button is-link is-light">Cancel</button>
+                    <button class="button is-primary" type="submit">Submit</button>
                 </div>
             </div>
         </form>
     </section>
+    <!--End of Contact Me Section-->
     <!--Scripts-->
     <!--<script src="" async defer></script>-->
 </body>
