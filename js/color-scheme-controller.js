@@ -1,8 +1,10 @@
 // Copyright (c) Lucas Becker 2021. All right reserved.
-"use strict";
+(function () {
+  "use strict";
+}());
 // initialization
-const darkModeEnabled = false;
-const themeRuleIndex = 0;
+let darkModeEnabled = false;
+let themeRuleIndex = 0;
 const styleSheet = document.styleSheets[0];
 const styleSheetRules = styleSheet.cssRules;
 const bannerImg = document.getElementById("header-img");
