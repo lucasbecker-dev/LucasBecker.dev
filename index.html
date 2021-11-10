@@ -1,10 +1,10 @@
 <!--Copyright (c) Lucas Becker 2021. All rights reserved.-->
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js" lang="en-US"> <![endif]-->
+<html lang="en-US">
 
 <head>
 
@@ -14,22 +14,25 @@
     <title>LucasBecker.dev</title>
     <meta name="description"
         content="Lucas Becker's personal website and portfolio for full-stack web development and software engineering." />
-    <link rel="icon" type="image/png" href="img/icons/favicon.ico" />
-    <link rel="stylesheet" href="css\bulma.min.css">
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/2e359c9cf2.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-serialize-object.min.js"></script>
 </head>
 
 <body>
     <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!--Navbar-->
     <nav class="navbar" role="navigation" aria-label="main navigation" id="top-of-page">
         <div class="navbar-brand">
 
-            <a class="navbar-item" href="#top-of-page">
-                <img src="./img/logos/NoSubtitle/vector/default-monochrome.svg" width="216" height="32">
+            <a class="navbar-item" href="#top-of-page" title="Return to top of page.">
+                <img src="./images/logos/NoSubtitle/vector/default-monochrome.svg" width="216" height="32"
+                    alt="LucasBecker.dev logo">
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -55,7 +58,7 @@
 
                 <div class="navbar-item">
                     <div class="buttons">
-                        <button class="button is-primary">
+                        <button class="button is-link">
                             <strong>Contact Me</strong>
                         </button>
                     </div>
@@ -134,12 +137,13 @@
             <!--Submit Contact Form Button-->
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button is-primary" type="submit" id="submit-form">Submit</button>
+                    <button class="button is-link" type="submit" id="submit-form">Submit</button>
                 </div>
             </div>
         </form>
     </section>
     <!--End of Contact Me Section-->
+    <footer class="section" id="page-footer"></footer>
     <!--Scripts-->
     <!--<script src="" async defer></script>-->
 </body>

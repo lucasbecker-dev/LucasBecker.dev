@@ -8,12 +8,17 @@ const $form = $('form#contact-form'),
 
 $('#submit-form').on('click', function (e) {
   e.preventDefault();
+  $form.serializeObject = function () {
+
+  }
   const jqxhr = $.ajax({
     url: url,
     method: "GET",
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-    // do something
+    function (data) {
+      console.log(data);
+    }
   );
 });
