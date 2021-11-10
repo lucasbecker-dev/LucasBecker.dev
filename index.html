@@ -7,6 +7,7 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,7 +77,8 @@
             <div class="field">
                 <label class="label" for="name-input">Name</label>
                 <div class="control has-icons-left">
-                    <input class="input" id="name-input" type="text" placeholder="Name" autocomplete="name" required>
+                    <input class="input" id="name-input" name="name" type="text" placeholder="Name" autocomplete="name"
+                        required>
                     <span class="icon is-small is-left">
                         <i class="fas fa-handshake"></i>
                     </span>
@@ -87,8 +89,8 @@
             <div class="field">
                 <label class="label" for="email-input">Email</label>
                 <div class="control has-icons-left">
-                    <input class="input" id="email-input" type="email" placeholder="Email" autocomplete="email"
-                        required />
+                    <input class="input" id="email-input" name="email" type="email" placeholder="Email"
+                        autocomplete="email" required />
                     <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                     </span>
@@ -99,7 +101,8 @@
             <div class="field">
                 <label class="label" for="tel-input">Phone</label>
                 <div class="control has-icons-left">
-                    <input class="input" id="tel-input" type="tel" placeholder="Phone number" autocomplete="tel" />
+                    <input class="input" id="tel-input" name="phone" type="tel" placeholder="Phone number"
+                        autocomplete="tel" />
                     <span class="icon is-small is-left">
                         <i class="fas fa-mobile-alt"></i>
                     </span>
@@ -111,7 +114,7 @@
                 <label class="label" for="preferred-contact-method">Preferred Contact Method</label>
                 <div class="control">
                     <div class="select">
-                        <select id="preferred-contact-method">
+                        <select id="preferred-contact-method" name="contact_pref">
                             <option>Email</option>
                             <option>Text</option>
                             <option>Call</option>
@@ -124,7 +127,7 @@
             <div class="field">
                 <label class="label" for="message-input">Message</label>
                 <div class="control">
-                    <textarea class="textarea" id="message-input" placeholder="Message"></textarea>
+                    <textarea class="textarea" id="message-input" name="message" placeholder="Message"></textarea>
                 </div>
             </div>
 
