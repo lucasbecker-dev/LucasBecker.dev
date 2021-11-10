@@ -28,7 +28,7 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!--Navbar-->
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation" id="top-of-page">
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation" id="top-of-page">
         <div class="navbar-brand">
 
             <a class="navbar-item" href="#top-of-page">
@@ -75,7 +75,7 @@
 
     <!--Contact Section-->
     <section class="section" id="contact-me-section">
-        <form>
+        <form method="post">
             <!--Name input-->
             <div class="field">
                 <label class="label" for="name-input">Name</label>
@@ -112,10 +112,10 @@
 
             <!--Preferred contact method-->
             <div class="field">
-                <label class="label">Preferred Contact Method</label>
+                <label class="label" for="preferred-contact-method">Preferred Contact Method</label>
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select id="preferred-contact-method">
                             <option>Email</option>
                             <option>Text</option>
                             <option>Call</option>
@@ -126,16 +126,16 @@
 
             <!--Reason for contact-->
             <div class="field">
-                <label class="label">Message</label>
+                <label class="label" for="message-input">Message</label>
                 <div class="control">
-                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                    <textarea class="textarea" id="message-input" placeholder="Message"></textarea>
                 </div>
             </div>
 
             <!--Submit Contact Form Button-->
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button is-primary" type="submit">Submit</button>
+                    <button class="button is-primary" type="submit" value="Submit"></button>
                 </div>
             </div>
         </form>
