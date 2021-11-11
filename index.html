@@ -47,12 +47,21 @@
             href="#top-of-page"
             title="Return to top of page."
           >
-            <h1 class="title has-text-light is-capitalized has-text">
-              lucas becker
-            </h1>
+            <h1 class="title has-text-light is-capitalized">lucas becker</h1>
             <!-- <img src="./images/logos/NoSubtitle/vector/default-monochrome.svg" width="216" height="32"
                     alt="LucasBecker.dev logo"> -->
           </a>
+
+          <div class="navbar-item">
+            <a class="button is-link" href="#contact-me-section">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <p><strong>Contact Me</strong></p>
+              </span>
+            </a>
+          </div>
 
           <a
             role="button"
@@ -75,17 +84,6 @@
             <a class="navbar-item" href="#projects-section"> Projects </a>
 
             <a class="navbar-item" href="#credentials-section"> Credentials </a>
-
-            <div class="navbar-item">
-              <a class="button is-link" href="mailto:contact@lucasbecker.dev">
-                <span class="icon-text">
-                  <span class="icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <p><strong>Contact Me</strong></p>
-                </span>
-              </a>
-            </div>
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
@@ -151,26 +149,49 @@
             </div>
             <div class="column">
               <p
-                class="is-size-4-desktop is-size-4-widescreen is-size-4-fullhd"
+                class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
               >
                 Hi! I'm <strong>Lucas Becker</strong>, a full-stack software and
                 web developer. I'm <em>extremely</em> enthusiastic about
                 programming and all things related.
               </p>
-              <p class="is-size-4-desktop is-size-4-widescreen is-size-4-fullhd">
+              <p
+                class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
+              >
                 I'm also a fan of
                 <strong>free and open-source software</strong> and prefer to use
                 it as much as possible.
               </p>
-              <p class="is-size-4-desktop is-size-4-widescreen is-size-4-fullhd">
-                I particularly enjoy building websites and web apps. I'm currently
+              <p
+                class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
+              >
+                Sometimes I like to make games, primarily with
+                <a href="https://godotengine.org/" title="Godot Engine"
+                  >Godot Engine</a
+                >.
+              </p>
+              <p
+                class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
+              >
+                I particularly enjoy building websites and web apps. I'm
+                currently
                 <span class="has-text-success"
                   ><strong
                     >available for freelance jobs and contracts</strong
                   ></span
                 >.
-              </p class="is-size-4-desktop is-size-4-widescreen is-size-4-fullhd">
-              <a class="has-text-warning is-size-4-desktop is-size-4-widescreen is-size-4-fullhd" href="mailto:contact@lucasbecker.dev"
+              </p>
+              <a
+                class="
+                  has-text-warning
+                  is-size-5-mobile
+                  is-size-5-tablet
+                  is-size-5-touch
+                  is-size-4-desktop
+                  is-size-4-widescreen
+                  is-size-4-fullhd
+                "
+                href="#contact-me-section"
                 >Send me an email with your contact information and project
                 details!</a
               >
@@ -189,7 +210,7 @@
       <!--End of Projects Section-->
 
       <!--Credentials Section-->
-      <section class="section hero is-dark is-large" id="credentials-section">
+      <section class="section hero is-light is-large" id="credentials-section">
         <div class="container has-text-centered">
           <h2 class="title">Credentials</h2>
         </div>
@@ -197,77 +218,124 @@
       <!--End of Credentials Section-->
 
       <!-- Contact Section-->
-      <!--<section class="section" id="contact-me-section">
-        <form id="contact-form">
-            <div class="field">
-                <label class="label" for="name-input">Name</label>
-                <div class="control has-icons-left">
-                    <input class="input" id="name-input" name="name" type="text" placeholder="Name" autocomplete="name"
-                        required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-handshake"></i>
-                    </span>
-                </div>
-            </div>
+      <section class="section hero is-light is-large" id="contact-me-section">
+        <div class="container has-text-centered">
+          <h2 class="title">Contact Me</h2>
+        </div>
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/52db9e589d2652583e7de5656d2bbbb7"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Contact Form Request" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://lucasbecker.dev/thankyou.html"
+          />
 
-            <div class="field">
-                <label class="label" for="email-input">Email</label>
-                <div class="control has-icons-left">
-                    <input class="input" id="email-input" name="email" type="email" placeholder="Email"
-                        autocomplete="email" required />
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                </div>
+          <div class="field">
+            <label class="label" for="name-input">Name</label>
+            <div class="control has-icons-left">
+              <input
+                class="input"
+                id="name-input"
+                name="name"
+                type="text"
+                placeholder="Name"
+                autocomplete="name"
+                required
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-handshake"></i>
+              </span>
             </div>
+          </div>
 
-            <div class="field">
-                <label class="label" for="tel-input">Phone</label>
-                <div class="control has-icons-left">
-                    <input class="input" id="tel-input" name="phone" type="tel" placeholder="Phone number"
-                        autocomplete="tel" />
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-mobile-alt"></i>
-                    </span>
-                </div>
+          <div class="field">
+            <label class="label" for="email-input">Email</label>
+            <div class="control has-icons-left">
+              <input
+                class="input"
+                id="email-input"
+                name="email"
+                type="email"
+                placeholder="Email"
+                autocomplete="email"
+                required
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
             </div>
+          </div>
 
-            <div class="field">
-                <label class="label" for="preferred-contact-method">Preferred Contact Method</label>
-                <div class="control">
-                    <div class="select">
-                        <select id="preferred-contact-method" name="contact_pref">
-                            <option>Email</option>
-                            <option>Text</option>
-                            <option>Call</option>
-                        </select>
-                    </div>
-                </div>
+          <div class="field">
+            <label class="label" for="tel-input">Phone</label>
+            <div class="control has-icons-left">
+              <input
+                class="input"
+                id="tel-input"
+                name="phone"
+                type="tel"
+                placeholder="Phone number"
+                autocomplete="tel"
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-mobile-alt"></i>
+              </span>
             </div>
+          </div>
 
-            <div class="field">
-                <label class="label" for="message-input">Message</label>
-                <div class="control">
-                    <textarea class="textarea" id="message-input" name="message" placeholder="Message"></textarea>
-                </div>
+          <div class="field">
+            <label class="label" for="preferred-contact-method"
+              >Preferred Contact Method</label
+            >
+            <div class="control">
+              <div class="select">
+                <select id="preferred-contact-method" name="contact_pref">
+                  <option>Email</option>
+                  <option>Text</option>
+                  <option>Call</option>
+                </select>
+              </div>
             </div>
+          </div>
 
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-link" type="submit" id="submit-form">Submit</button>
-                </div>
+          <div class="field">
+            <label class="label" for="message-input">Message</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                id="message-input"
+                name="message"
+                placeholder="Please provide as much information about your project needs as you can."
+              ></textarea>
             </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" type="submit" id="submit-form">
+                Submit
+              </button>
+            </div>
+          </div>
         </form>
-    </section>-->
+      </section>
       <!--End of Contact Me Section -->
+
+      <!--Footer-->
     </main>
-    <footer class="footer">
+    <footer class="footer hero is-dark">
       <div class="container has-text-centered">
-        <p class="has-text-grey-light">
-          Copyright © Lucas Becker 2021. All rights reserved.
+        <p>
+          <small>Copyright © Lucas Becker 2021. All rights reserved.</small>
         </p>
       </div>
     </footer>
+    <!--End of Footer-->
+
     <!--Scripts-->
     <!--<script src="" async defer></script>-->
   </body>
