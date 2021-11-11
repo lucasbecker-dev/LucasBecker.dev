@@ -11,7 +11,7 @@ $('#submit-form').on('click', function (e) {
   $form.serializeObject = function () {
 
   }
-  const jqxhr = $.ajax({
+  const jqxhr = $form.ajax({
     url: url,
     method: "GET",
     dataType: "json",
