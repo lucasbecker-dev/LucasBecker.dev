@@ -22,7 +22,7 @@
       src="https://kit.fontawesome.com/2e359c9cf2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/burgerMenu.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
 
   <body class="has-navbar-fixed-top">
@@ -77,15 +77,12 @@
             <a class="navbar-item" href="#credentials-section"> Credentials </a>
 
             <div class="navbar-item">
-              <a
-                class="button is-danger has-icons-left"
-                href="mailto:contact@lucasbecker.dev"
-              >
+              <a class="button is-danger" href="mailto:contact@lucasbecker.dev">
                 <span class="icon-text">
                   <span class="icon">
                     <i class="fas fa-envelope"></i>
                   </span>
-                  <span>Contact Me</span>
+                  <p>Contact Me</p>
                 </span>
               </a>
             </div>
@@ -97,7 +94,7 @@
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
-                  <span>Github</span>
+                  <p>Github</p>
                 </span>
               </a>
             </div>
@@ -110,7 +107,7 @@
                   <span class="icon">
                     <i class="fab fa-linkedin"></i>
                   </span>
-                  <span>LinkedIn</span>
+                  <p>LinkedIn</p>
                 </span>
               </a>
             </div>
@@ -123,7 +120,7 @@
                   <span class="icon">
                     <i class="fab fa-twitter"></i>
                   </span>
-                  <span>Twitter</span>
+                  <p>Twitter</p>
                 </span>
               </a>
             </div>
@@ -132,36 +129,36 @@
       </div>
     </nav>
     <!--End of Navbar-->
+    <main id="main-content">
+      <!--About Section-->
+      <section class="section has-background-dark is-large" id="about-section">
+        <div class="container has-text-centered">
+          <h2 class="title has-text-light">About</h2>
+        </div>
+      </section>
+      <!--End of About Section-->
 
-    <!--About Section-->
-    <section class="section has-background-dark is-large" id="about-section">
-      <div class="container has-text-centered">
-        <h2 class="title has-text-light">About</h2>
-      </div>
-    </section>
-    <!--End of About Section-->
+      <!--Projects Section-->
+      <section class="section is-large" id="projects-section">
+        <div class="container has-text-centered">
+          <h2 class="title">Projects</h2>
+        </div>
+      </section>
+      <!--End of Projects Section-->
 
-    <!--Projects Section-->
-    <section class="section is-large" id="projects-section">
-      <div class="container has-text-centered">
-        <h2 class="title">Projects</h2>
-      </div>
-    </section>
-    <!--End of Projects Section-->
+      <!--Credentials Section-->
+      <section
+        class="section has-background-dark is-large"
+        id="credentials-section"
+      >
+        <div class="container has-text-centered">
+          <h2 class="title has-text-light">Credentials</h2>
+        </div>
+      </section>
+      <!--End of Credentials Section-->
 
-    <!--Credentials Section-->
-    <section
-      class="section has-background-dark is-large"
-      id="credentials-section"
-    >
-      <div class="container has-text-centered">
-        <h2 class="title has-text-light">Credentials</h2>
-      </div>
-    </section>
-    <!--End of Credentials Section-->
-
-    <!-- Contact Section-->
-    <!--<section class="section" id="contact-me-section">
+      <!-- Contact Section-->
+      <!--<section class="section" id="contact-me-section">
         <form id="contact-form">
             <div class="field">
                 <label class="label" for="name-input">Name</label>
@@ -223,7 +220,8 @@
             </div>
         </form>
     </section>-->
-    <!--End of Contact Me Section -->
+      <!--End of Contact Me Section -->
+    </main>
     <footer class="footer">
       <div class="container has-text-centered">
         <p class="has-text-grey-light">
