@@ -4,11 +4,8 @@
 }());
 
 const returnButton = document.getElementById("returnButton");
-returnButton.addEventListener("click", returnToMainPage);
-const returnToMainPage = () => {
-  clearTimeout(timeout);
+function returnToMainPage() {
   window.location.pathname = ('/');
 }
-let time = 10000;
-let timeout = setTimeout(returnToMainPage, time);
+window.setTimeout(returnToMainPage, 5000);
 
