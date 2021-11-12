@@ -7,23 +7,24 @@
 const burgerMenu = document.getElementById("burgerMenu");
 const navbarMenu = document.getElementById("navbarMenu");
 const menuButtons = document.getElementsByClassName("toggles-menu");
-const active = burgerMenu.classList.contains("is-active");
-function toggleActive() {
-  burgerMenu.classList.toggle("is-active");
+let active = burgerMenu.classList.contains("is-active");
+const toggleMenu = () => {
+  active = burgerMenu.classList.toggle("is-active");
   navbarMenu.classList.toggle("is-active");
-};
-
-burgerMenu.addEventListener("click", () => {
-  if (burgerMenu.classList.contains("is-active")) {
-    for (let button of menuButtons) {
-      button.addEventListener("click", toggleActive());
+  toggleButtons();
+}
+const toggleButtons = () => {
+  if (active) {
+    for (const button of [...menuButtons]) {
+      button.addEventListener("click", toggleMenu);
     }
   } else {
-    for (let button of menuButtons) {
-      button.removeEventListener("click", toggleActive());
+    for (const button of [...menuButtons]) {
+      button.removeEventListener("click", toggleMenu);
     }
   }
-  this.toggleActive();
-});
+}
+
+burgerMenu.addEventListener("click", toggleMenu);
 
 // END OF BURGER MENU FUNCTIONALITY
