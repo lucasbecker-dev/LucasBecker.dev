@@ -25,7 +25,7 @@
     <script src="./js/index.js" defer></script>
   </head>
 
-  <body class="has-navbar-fixed-top">
+  <body class="has-navbar-fixed-top" id="top-of-page">
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -38,7 +38,6 @@
       class="navbar is-fixed-top is-black"
       role="navigation"
       aria-label="main navigation"
-      id="top-of-page"
     >
       <div class="container">
         <div class="navbar-brand">
@@ -68,6 +67,12 @@
 
         <div class="navbar-menu" id="navbarMenu">
           <div class="navbar-start">
+            <a class="navbar-item" href="#about-section"> About </a>
+
+            <a class="navbar-item" href="#portfolio-section"> Portfolio </a>
+
+            <a class="navbar-item" href="#credentials-section"> Credentials </a>
+
             <div class="navbar-item">
               <a class="button is-link" href="#contact-me-section">
                 <span class="icon-text">
@@ -78,12 +83,6 @@
                 </span>
               </a>
             </div>
-
-            <a class="navbar-item" href="#about-section"> About </a>
-
-            <a class="navbar-item" href="#projects-section"> Projects </a>
-
-            <a class="navbar-item" href="#credentials-section"> Credentials </a>
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
@@ -151,16 +150,17 @@
               <p
                 class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
               >
-                Hi! I'm <strong>Lucas Becker</strong>, a full-stack software and
-                web developer. I'm <em>extremely</em> enthusiastic about
-                programming and all things related.
+                Hi! I'm <strong class="has-text-primary">Lucas Becker</strong>,
+                a full-stack software and web developer. I'm
+                <em>extremely</em> enthusiastic about programming and all things
+                related.
               </p>
               <p
                 class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
               >
                 I'm also a fan of
-                <strong>free and open-source software</strong> and prefer to use
-                it as much as possible.
+                <em>free and open-source software</em> and prefer to use it as
+                much as possible.
               </p>
               <p
                 class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
@@ -195,6 +195,7 @@
                   is-size-4-fullhd
                 "
                 href="#contact-me-section"
+                title="Contact Me"
                 >Send me an email with your contact information and project
                 details!</a
               >
@@ -204,36 +205,98 @@
       </section>
       <!--End of About Section-->
 
-      <!--Projects Section-->
-      <section class="section hero is-light is-large" id="projects-section">
+      <!--Portfolio Section-->
+      <section class="section hero is-light is-large" id="portfolio-section">
         <div class="container">
-          <h2 class="title has-text-centered">Projects</h2>
+          <h2 class="title has-text-centered">Portfolio</h2>
           <div class="columns is-centered is-vcentered">
-            <div class="card">
-              <div class="card-header">
-                <span class="card-header-icon">
-                  <i class="fas fa-book"></i>
-                </span>
-                <h3 class="card-header-title">Technical Documentation</h3>
-              </div>
-              <div class="card-image">
-                <figure class="image">
-                  <img
-                    src="images/tindog-preview.png"
-                    alt="Tindog project preview image"
-                    height="960"
-                    width="960"
-                  />
-                </figure>
-              </div>
-            </div>
+            <article class="column">
+              <a href="./tindog.html" title="Tindog">
+                <div class="card">
+                  <div class="card-header">
+                    <span class="card-header-icon">
+                      <i class="fas fa-dog"></i>
+                    </span>
+                    <h3 class="card-header-title">Tindog</h3>
+                  </div>
+                  <div class="card-image">
+                    <figure class="image is-square">
+                      <img
+                        src="images/tindog-preview.jpg"
+                        alt="Tindog project preview image"
+                        height="1028"
+                        width="1028"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p>Landing page for a mock web app.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="column">
+              <a href="./technicaldocs.html" title="Technical Documentation">
+                <div class="card">
+                  <div class="card-header">
+                    <span class="card-header-icon">
+                      <i class="fas fa-book"></i>
+                    </span>
+                    <h3 class="card-header-title">Technical Documentation</h3>
+                  </div>
+                  <div class="card-image">
+                    <figure class="image is-square">
+                      <img
+                        src="images/technical-documentation-preview.jpg"
+                        alt="Technical documentation project preview image"
+                        height="1028"
+                        width="1028"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p>Technical documentation template.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="column">
+              <a href="./tributepage.html" title="Tribute Page">
+                <div class="card">
+                  <div class="card-header">
+                    <span class="card-header-icon">
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    <h3 class="card-header-title">Tribute Page</h3>
+                  </div>
+                  <div class="card-image">
+                    <figure class="image is-square">
+                      <img
+                        src="images/tribute-page-preview.jpg"
+                        alt="Tribute Page project preview image"
+                        height="1028"
+                        width="1028"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p>A tribute to my family.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
           </div>
         </div>
       </section>
       <!--End of Projects Section-->
 
       <!--Credentials Section-->
-      <section class="section hero is-light is-large" id="credentials-section">
+      <section
+        class="section hero is-light has-background-grey-lighter is-large"
+        id="credentials-section"
+      >
         <div class="container has-text-centered">
           <h2 class="title">Credentials</h2>
         </div>
