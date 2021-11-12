@@ -45,6 +45,7 @@
             class="navbar-item"
             href="#top-of-page"
             title="Return to top of page."
+            aria-label="Goto top of page"
           >
             <h1 class="title has-text-light is-capitalized">lucas becker</h1>
             <!-- <img src="./images/logos/NoSubtitle/vector/default-monochrome.svg" width="216" height="32"
@@ -55,7 +56,7 @@
             role="button"
             class="navbar-burger"
             id="burgerMenu"
-            aria-label="menu"
+            aria-label="navigation menu"
             data-target="navbarMenu"
             aria-expanded="false"
           >
@@ -67,14 +68,36 @@
 
         <div class="navbar-menu" id="navbarMenu">
           <div class="navbar-start">
-            <a class="navbar-item" href="#about-section"> About </a>
+            <a
+              class="navbar-item"
+              href="#about-section"
+              aria-label="Goto about section"
+            >
+              About
+            </a>
 
-            <a class="navbar-item" href="#portfolio-section"> Portfolio </a>
+            <a
+              class="navbar-item"
+              href="#portfolio-section"
+              aria-label="Goto portfolio section"
+            >
+              Portfolio
+            </a>
 
-            <a class="navbar-item" href="#credentials-section"> Credentials </a>
+            <a
+              class="navbar-item"
+              href="#credentials-section"
+              aria-label="Goto credentials section"
+            >
+              Credentials
+            </a>
 
             <div class="navbar-item">
-              <a class="button is-link" href="#contact-me-section">
+              <a
+                class="button is-link"
+                href="#contact-me-section"
+                aria-label="Goto contact form"
+              >
                 <span class="icon-text">
                   <span class="icon">
                     <i class="fas fa-envelope"></i>
@@ -133,7 +156,7 @@
       <!--About Section-->
       <section class="section hero is-dark is-large" id="about-section">
         <div class="container">
-          <h2 class="title is-2 has-text-centered">About</h2>
+          <h2 class="title has-text-centered">About</h2>
           <div class="columns is-centered is-vcentered is-mobile">
             <div class="column is-narrow">
               <figure class="image is-128x128">
@@ -207,87 +230,99 @@
 
       <!--Portfolio Section-->
       <section class="section hero is-light is-large" id="portfolio-section">
-        <div class="container">
-          <h2 class="title has-text-centered">Portfolio</h2>
-          <div class="columns is-centered is-vcentered">
-            <article class="column">
-              <a href="./tindog.html" title="Tindog">
-                <div class="card">
-                  <div class="card-header">
-                    <span class="card-header-icon">
-                      <i class="fas fa-dog"></i>
-                    </span>
-                    <h3 class="card-header-title">Tindog</h3>
-                  </div>
-                  <div class="card-image">
-                    <figure class="image is-square">
-                      <img
-                        src="images/tindog-preview.jpg"
-                        alt="Tindog project preview image"
-                        height="1028"
-                        width="1028"
-                      />
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <p>Landing page for a mock web app.</p>
-                  </div>
+        <h2 class="title has-text-centered">Portfolio</h2>
+        <div class="columns is-centered">
+          <div class="column" aria-hidden="true"></div>
+          <article class="column">
+            <a
+              href="./tindog.html"
+              title="Tindog"
+              aria-label="Goto tindog page"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <span class="card-header-icon">
+                    <i class="fas fa-dog"></i>
+                  </span>
+                  <h3 class="card-header-title">Tindog</h3>
                 </div>
-              </a>
-            </article>
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img
+                      src="images/tindog-preview.jpg"
+                      alt="Tindog project preview image"
+                      height="1028"
+                      width="1028"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p>Landing page for a mock web app.</p>
+                </div>
+              </div>
+            </a>
+          </article>
 
-            <article class="column">
-              <a href="./technicaldocs.html" title="Technical Documentation">
-                <div class="card">
-                  <div class="card-header">
-                    <span class="card-header-icon">
-                      <i class="fas fa-book"></i>
-                    </span>
-                    <h3 class="card-header-title">Technical Documentation</h3>
-                  </div>
-                  <div class="card-image">
-                    <figure class="image is-square">
-                      <img
-                        src="images/technical-documentation-preview.jpg"
-                        alt="Technical documentation project preview image"
-                        height="1028"
-                        width="1028"
-                      />
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <p>Technical documentation template.</p>
-                  </div>
+          <article class="column">
+            <a
+              href="./technicaldocs.html"
+              title="Technical Documentation"
+              aria-label="Goto technical documentation page"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <span class="card-header-icon">
+                    <i class="fas fa-book"></i>
+                  </span>
+                  <h3 class="card-header-title">Technical Documentation</h3>
                 </div>
-              </a>
-            </article>
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img
+                      src="images/technical-documentation-preview.jpg"
+                      alt="Technical documentation project preview image"
+                      height="1028"
+                      width="1028"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p>Technical documentation template.</p>
+                </div>
+              </div>
+            </a>
+          </article>
 
-            <article class="column">
-              <a href="./tributepage.html" title="Tribute Page">
-                <div class="card">
-                  <div class="card-header">
-                    <span class="card-header-icon">
-                      <i class="fas fa-heart"></i>
-                    </span>
-                    <h3 class="card-header-title">Tribute Page</h3>
-                  </div>
-                  <div class="card-image">
-                    <figure class="image is-square">
-                      <img
-                        src="images/tribute-page-preview.jpg"
-                        alt="Tribute Page project preview image"
-                        height="1028"
-                        width="1028"
-                      />
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <p>A tribute to my family.</p>
-                  </div>
+          <article class="column">
+            <a
+              href="./tributepage.html"
+              title="Tribute Page"
+              aria-label="Goto tribute page"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <span class="card-header-icon">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                  <h3 class="card-header-title">Tribute Page</h3>
                 </div>
-              </a>
-            </article>
-          </div>
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img
+                      src="images/tribute-page-preview.jpg"
+                      alt="Tribute Page project preview image"
+                      height="1028"
+                      width="1028"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p>A tribute to my family.</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="column" aria-hidden="true"></div>
         </div>
       </section>
       <!--End of Projects Section-->
@@ -299,6 +334,98 @@
       >
         <div class="container has-text-centered">
           <h2 class="title">Credentials</h2>
+        </div>
+        <div class="columns is-centered">
+          <article class="column is-narrow section">
+            <h3 class="subtitle has-text-centered">Education</h3>
+            <div class="notification">
+              <div class="columns is-centered is-vcentered is-mobile">
+                <div class="column is-narrow">
+                  <figure class="image is-64x64">
+                    <img
+                      src="./images/southern-new-hampshire-university-logo.jpg"
+                      alt="Southern New Hampshire University Logo"
+                      height="512"
+                      width="512"
+                    />
+                  </figure>
+                </div>
+                <div class="column">
+                  <p>Southern New Hampshire Univesity</p>
+                  <p>BS Computer Science (in progress!)</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="column is-narrow section">
+            <h3 class="subtitle has-text-centered">Certifications</h3>
+            <a
+              href="https://www.freecodecamp.org/certification/lucasbecker451/responsive-web-design"
+              title="freeCodeCamp Responsive Web Design Certification"
+              aria-label="link to freeCodeCamp Responsive Web Design Certification"
+            >
+              <div class="notification">
+                <div class="columns is-centered is-vcentered is-mobile">
+                  <div class="column is-narrow">
+                    <figure class="image is-64x64">
+                      <img
+                        src="./images/freecodecamp-logo.jpg"
+                        alt="freeCodeCamp Logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <p>freeCodeCamp</p>
+                    <p>Responsive Web Design</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.freecodecamp.org/certification/lucasbecker451/javascript-algorithms-and-data-structures"
+              title="freeCodeCamp Javascript and Algorithms and Data Structures"
+              aria-label="link to freeCodeCamp Javascript and Algorithms and Data Structures Certification"
+            >
+              <div class="notification">
+                <div class="columns is-centered is-vcentered is-mobile">
+                  <div class="column is-narrow">
+                    <figure class="image is-64x64">
+                      <img
+                        src="./images/freecodecamp-logo.jpg"
+                        alt="freeCodeCamp Logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <p>freeCodeCamp</p>
+                    <p>Javascript and Algorithms and Data Structures</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.freecodecamp.org/certification/lucasbecker451/scientific-computing-with-python-v7"
+              title="freeCodeCamp Scientific Computing With Python Certification"
+              aria-label="link to freeCodeCamp Scientific Computing With Python Certification"
+            >
+              <div class="notification">
+                <div class="columns is-centered is-vcentered is-mobile">
+                  <div class="column is-narrow">
+                    <figure class="image is-64x64">
+                      <img
+                        src="./images/freecodecamp-logo.jpg"
+                        alt="freeCodeCamp Logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <p>freeCodeCamp</p>
+                    <p>Scientific Computing With Python</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
       </section>
       <!--End of Credentials Section-->
