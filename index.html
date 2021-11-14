@@ -160,82 +160,67 @@
     <!--End of Navbar-->
     <main id="main-content">
       <!--About Section-->
-      <section class="section hero is-dark is-large" id="about-section">
+      <section class="section hero is-dark is-medium" id="about-section">
+        <h2 class="title has-text-centered">About</h2>
         <div class="container">
-          <h2 class="title has-text-centered">About</h2>
-          <div class="columns is-centered is-vcentered is-mobile">
-            <div class="column is-narrow">
-              <figure class="image is-128x128">
-                <img
-                  class="is-rounded"
-                  src="./images/profile-pic-FINAL-SQUARE-min.jpg"
-                  alt="Lucas Becker's profile picture"
-                  width="128"
-                  height="128"
-                />
-              </figure>
-            </div>
-            <div class="column">
-              <p
-                class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
-              >
-                Hi! I'm <strong class="has-text-primary">Lucas Becker</strong>,
-                a full-stack software and web developer. I'm
-                <em>extremely</em> enthusiastic about programming and all things
-                related.
-              </p>
-              <p
-                class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
-              >
-                I'm also a fan of
-                <em>free and open-source software</em> and prefer to use it as
-                much as possible.
-              </p>
-              <p
-                class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
-              >
-                Sometimes I like to make games, primarily with
-                <a
-                  class="has-text-info"
-                  href="https://godotengine.org/"
-                  title="Godot Engine"
-                  >Godot Engine</a
-                >.
-              </p>
-              <p
-                class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd"
-              >
-                I particularly enjoy building websites and web apps. I'm
-                currently
-                <span class="has-text-success"
-                  ><strong
-                    >available for freelance jobs and contracts</strong
-                  ></span
-                >.
-              </p>
-              <a
-                class="
-                  has-text-warning
-                  is-size-5-mobile
-                  is-size-5-tablet
-                  is-size-5-touch
-                  is-size-4-desktop
-                  is-size-4-widescreen
-                  is-size-4-fullhd
-                "
-                href="#contact-me-section"
-                title="Contact Me"
-                >Send me an email with your contact information and project
-                details!</a
-              >
-            </div>
-          </div>
+          <figure class="image is-128x128">
+            <img
+              class="is-rounded"
+              src="./images/profile-pic-FINAL-SQUARE-min.jpg"
+              alt="Lucas Becker's profile picture"
+              width="128"
+              height="128"
+            />
+          </figure>
+        </div>
+        <div class="container mt-4">
+          <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
+            Hi! I'm <strong class="has-text-primary">Lucas Becker</strong>, a
+            full-stack software and web developer. I'm
+            <em>extremely</em> enthusiastic about programming and all things
+            related.
+          </p>
+          <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
+            I'm also a fan of
+            <em>free and open-source software</em> and prefer to use it as much
+            as possible.
+          </p>
+          <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
+            Sometimes I like to make games, primarily with
+            <a
+              class="has-text-info"
+              href="https://godotengine.org/"
+              title="Godot Engine"
+              >Godot Engine</a
+            >.
+          </p>
+          <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
+            I particularly enjoy building websites and web apps. I'm currently
+            <span class="has-text-success"
+              ><strong>available for freelance jobs and contracts</strong></span
+            >.
+          </p>
+          <a
+            class="
+              has-text-warning
+              is-size-5-mobile
+              is-size-5-tablet
+              is-size-5-touch
+              is-size-4-desktop
+              is-size-4-widescreen
+              is-size-4-fullhd
+            "
+            href="#contact-me-section"
+            title="Contact Me"
+            >Send me an email with your contact information and project
+            details!</a
+          >
         </div>
       </section>
       <!--End of About Section-->
 
       <!--Portfolio Section-->
-      <section class="section hero is-light is-large" id="portfolio-section">
+      <section class="section hero is-light" id="portfolio-section">
         <h2 class="title has-text-centered">Portfolio</h2>
         <div class="columns is-centered">
           <div class="column" aria-hidden="true"></div>
@@ -335,7 +320,7 @@
 
       <!--Credentials Section-->
       <section
-        class="section hero is-light has-background-grey-lighter is-large"
+        class="section hero is-light has-background-grey-lighter"
         id="credentials-section"
       >
         <div class="container has-text-centered">
@@ -437,110 +422,113 @@
       <!--End of Credentials Section-->
 
       <!-- Contact Section-->
-      <section class="section hero is-light is-large" id="contact-me-section">
+      <section class="section hero is-light" id="contact-me-section">
         <div class="container has-text-centered">
           <h2 class="title">Contact Me</h2>
         </div>
-        <form
-          id="contact-form"
-          action="https://formsubmit.co/52db9e589d2652583e7de5656d2bbbb7"
-          method="POST"
-        >
-          <input type="hidden" name="_subject" value="Contact Form Request" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://lucasbecker.dev/thanks"
-          />
+        <div class="columns is-centered">
+          <form
+            id="contact-form"
+            class="column is-half is-two-thirds-tablet is-two-thirds-touch"
+            action="https://formsubmit.co/52db9e589d2652583e7de5656d2bbbb7"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Contact Form Request" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://lucasbecker.dev/thanks"
+            />
 
-          <div class="field">
-            <label class="label" for="name-input">Name</label>
-            <div class="control has-icons-left">
-              <input
-                class="input"
-                id="name-input"
-                name="name"
-                type="text"
-                placeholder="Name"
-                autocomplete="name"
-                required
-              />
-              <span class="icon is-small is-left">
-                <i class="fas fa-handshake"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="email-input">Email</label>
-            <div class="control has-icons-left">
-              <input
-                class="input"
-                id="email-input"
-                name="email"
-                type="email"
-                placeholder="Email"
-                autocomplete="email"
-                required
-              />
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="tel-input">Phone</label>
-            <div class="control has-icons-left">
-              <input
-                class="input"
-                id="tel-input"
-                name="phone"
-                type="tel"
-                placeholder="Phone number"
-                autocomplete="tel"
-              />
-              <span class="icon is-small is-left">
-                <i class="fas fa-mobile-alt"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="preferred-contact-method"
-              >Preferred Contact Method</label
-            >
-            <div class="control">
-              <div class="select">
-                <select id="preferred-contact-method" name="contact_pref">
-                  <option>Email</option>
-                  <option>Text</option>
-                  <option>Call</option>
-                </select>
+            <div class="field">
+              <label class="label" for="name-input">Name</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  id="name-input"
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                  autocomplete="name"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-handshake"></i>
+                </span>
               </div>
             </div>
-          </div>
 
-          <div class="field">
-            <label class="label" for="message-input">Message</label>
-            <div class="control">
-              <textarea
-                class="textarea"
-                id="message-input"
-                name="message"
-                placeholder="Please provide as much information about your project needs as you can."
-              ></textarea>
+            <div class="field">
+              <label class="label" for="email-input">Email</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  id="email-input"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
             </div>
-          </div>
 
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-link" type="submit" id="submit-form">
-                Submit
-              </button>
+            <div class="field">
+              <label class="label" for="tel-input">Phone</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  id="tel-input"
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone number"
+                  autocomplete="tel"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-mobile-alt"></i>
+                </span>
+              </div>
             </div>
-          </div>
-        </form>
+
+            <div class="field">
+              <label class="label" for="preferred-contact-method"
+                >Preferred Contact Method</label
+              >
+              <div class="control">
+                <div class="select">
+                  <select id="preferred-contact-method" name="contact_pref">
+                    <option>Email</option>
+                    <option>Text</option>
+                    <option>Call</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="message-input">Message</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  id="message-input"
+                  name="message"
+                  placeholder="Please provide as much information about your project needs as you can."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link" type="submit" id="submit-form">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
       <!--End of Contact Me Section -->
 
