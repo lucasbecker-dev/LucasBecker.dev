@@ -6,421 +6,599 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js" lang="en-US"> <![endif]-->
 <html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LucasBecker.dev</title>
+    <meta
+      name="description"
+      content="Lucas Becker's website and portfolio for full-stack web development and software engineering."
+    />
+    <meta
+      name="keywords"
+      content="website, web development, freelance, web developer, software developer, software development, freelancer, Lucas Becker, programming, game development, hire web developer."
+    />
+    <link rel="icon" type="image/png" href="./images/icons/favicon.ico" />
+    <link rel="stylesheet" href="./css/bulma.min.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <script
+      src="https://kit.fontawesome.com/2e359c9cf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LucasBecker.dev</title>
-  <meta name="description"
-    content="Lucas Becker's website and portfolio for full-stack web development and software engineering." />
-  <meta name="keywords"
-    content="website, web development, freelance, web developer, software developer, software development, freelancer, Lucas Becker, programming, game development, hire web developer." />
-  <link rel="icon" type="image/png" href="./images/icons/favicon.ico" />
-  <link rel="stylesheet" href="./css/bulma.min.css" />
-  <link rel="stylesheet" href="./css/styles.min.css" />
-  <script src="https://kit.fontawesome.com/2e359c9cf2.js" crossorigin="anonymous"></script>
-  <script src="./js/index.js" defer></script>
-</head>
-
-<body class="has-navbar-fixed-top" id="top-of-page">
-  <!--[if lt IE 7]>
+  <body class="has-navbar-fixed-top" id="top-of-page">
+    <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
         <a href="https://browsehappy.com/">upgrade your browser</a> to improve
         your experience.
       </p>
     <![endif]-->
-  <!--Navbar-->
-  <nav class="navbar is-fixed-top is-black" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#top-of-page" title="Return to top of page." aria-label="Goto top of page">
-          <h1 class="title has-text-light is-capitalized">lucas becker</h1>
-          <!-- <img src="./images/logos/NoSubtitle/vector/default-monochrome.svg" width="216" height="32"
-                    alt="LucasBecker.dev logo"> -->
-        </a>
-
-        <a role="button" class="navbar-burger" id="burgerMenu" aria-label="navigation menu" data-target="navbarMenu"
-          aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div class="navbar-menu" id="navbarMenu">
-        <div class="navbar-start">
-          <a class="navbar-item toggles-menu" href="#about-section" aria-label="Goto about section">
-            About
-          </a>
-
-          <a class="navbar-item toggles-menu" href="#portfolio-section" aria-label="Goto portfolio section">
-            Portfolio
-          </a>
-
-          <a class="navbar-item toggles-menu" href="#credentials-section" aria-label="Goto credentials section">
-            Credentials
-          </a>
-
-          <div class="navbar-item">
-            <a class="button is-link toggles-menu" href="#contact-me-section" aria-label="Goto contact form">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <p><strong>Contact Me</strong></p>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <a class="button is-link is-danger toggles-menu" href="https://ko-fi.com/lucasbecker_dev" target="_blank"
-              rel="noopener" aria-label="link to Ko-fi">
-              <span class="icon-text">
-                <span class="icon">
-                  <img src="./images/icons/ko-fi-svgrepo-com.svg" alt="Ko-fi icon" />
-                </span>
-                <p>Support my work!</p>
-              </span>
-            </a>
-          </div>
-
-          <a class="navbar-item toggles-menu" href="https://github.com/lucasbecker-dev" target="_blank" rel="noopener"
-            aria-label="Github link">
-            <span class="icon-text">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <p>Github</p>
-            </span>
-          </a>
-
-          <a class="navbar-item toggles-menu" href="https://www.linkedin.com/in/lucasbecker-dev/" target="_blank"
-            rel="noopener" aria-label="LinkedIn link">
-            <span class="icon-text">
-              <span class="icon">
-                <i class="fab fa-linkedin"></i>
-              </span>
-              <p>LinkedIn</p>
-            </span>
-          </a>
-
-          <a class="navbar-item toggles-menu" href="https://twitter.com/lucasbecker_dev" target="_blank" rel="noopener"
-            aria-label="Twitter link">
-            <span class="icon-text">
-              <span class="icon">
-                <i class="fab fa-twitter"></i>
-              </span>
-              <p>Twitter</p>
-            </span>
-          </a>
-
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!--End of Navbar-->
-  <main id="main-content">
-    <!--About Section-->
-    <section class="section hero is-dark is-medium" id="about-section">
-      <h2 class="title has-text-centered">About</h2>
+    <!--Navbar-->
+    <nav class="navbar is-fixed-top is-black" aria-label="main navigation">
       <div class="container">
-        <figure class="image is-128x128">
-          <img class="is-rounded" src="./images/80510809.jpeg" alt="Lucas Becker's profile picture" width="128"
-            height="128" />
-        </figure>
-      </div>
-      <div class="container mt-4">
-        <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
-          Hi! I'm <strong class="has-text-primary">Lucas Becker</strong>, a
-          full-stack software and web developer. I'm enthusiastic about
-          programming and all things related.
-        </p>
-        <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
-          I'm also a fan of
-          <em>free and open-source software</em> and prefer to use it whenever
-          it's practical.
-        </p>
-        <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
-          Sometimes I like to make games, primarily with
-          <a class="has-text-info" href="https://godotengine.org/" title="Godot Engine">Godot Engine</a>.
-        </p>
-        <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
-          I particularly enjoy building websites and web apps. I'm currently
-          <span class="has-text-success"><strong>available for freelance jobs and contracts</strong></span>.
-        </p>
-        <a class="
-              has-text-warning
-              is-size-5-mobile
-              is-size-5-tablet
-              is-size-5-touch
-              is-size-4-desktop
-              is-size-4-widescreen
-              is-size-4-fullhd
-            " href="#contact-me-section" title="Contact Me">Send me an email with your contact information and project
-          details!</a>
-      </div>
-    </section>
-    <!--End of About Section-->
-
-    <!--Portfolio Section-->
-    <section class="section hero is-light" id="portfolio-section">
-      <h2 class="title has-text-centered">Portfolio</h2>
-      <div class="columns is-centered">
-        <div class="column" aria-hidden="true"></div>
-        <article class="column">
-          <a href="./tindog.html" title="Tindog" aria-label="Goto tindog page">
-            <div class="card">
-              <div class="card-header">
-                <span class="card-header-icon">
-                  <i class="fas fa-dog"></i>
-                </span>
-                <h3 class="card-header-title">Tindog</h3>
-              </div>
-              <div class="card-image">
-                <figure class="image is-square">
-                  <img src="images/tindog-preview.jpg" alt="Tindog project preview image" height="1028" width="1028" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <p>Landing page for a mock web app.</p>
-              </div>
-            </div>
+        <div class="navbar-brand">
+          <a
+            class="navbar-item"
+            href="#top-of-page"
+            title="Return to top of page."
+            aria-label="Goto top of page"
+          >
+            <h1 class="title has-text-light is-capitalized">lucas becker</h1>
+            <!-- <img src="./images/logos/NoSubtitle/vector/default-monochrome.svg" width="216" height="32"
+                    alt="LucasBecker.dev logo"> -->
           </a>
-        </article>
 
-        <article class="column">
-          <a href="./technicaldocs.html" title="Technical Documentation" aria-label="Goto technical documentation page">
-            <div class="card">
-              <div class="card-header">
-                <span class="card-header-icon">
-                  <i class="fas fa-book"></i>
-                </span>
-                <h3 class="card-header-title">Technical Documentation</h3>
-              </div>
-              <div class="card-image">
-                <figure class="image is-square">
-                  <img src="images/technical-documentation-preview.jpg"
-                    alt="Technical documentation project preview image" height="1028" width="1028" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <p>Technical documentation template.</p>
-              </div>
-            </div>
+          <a
+            role="button"
+            class="navbar-burger"
+            id="burgerMenu"
+            aria-label="navigation menu"
+            data-target="navbarMenu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
-        </article>
+        </div>
 
-        <article class="column">
-          <a href="./tributepage.html" title="Tribute Page" aria-label="Goto tribute page">
-            <div class="card">
-              <div class="card-header">
-                <span class="card-header-icon">
-                  <i class="fas fa-heart"></i>
+        <div class="navbar-menu" id="navbarMenu">
+          <div class="navbar-start">
+            <a
+              class="navbar-item toggles-menu"
+              href="#about-section"
+              aria-label="Goto about section"
+            >
+              About
+            </a>
+
+            <a
+              class="navbar-item toggles-menu"
+              href="#portfolio-section"
+              aria-label="Goto portfolio section"
+            >
+              Portfolio
+            </a>
+
+            <a
+              class="navbar-item toggles-menu"
+              href="#credentials-section"
+              aria-label="Goto credentials section"
+            >
+              Credentials
+            </a>
+
+            <div class="navbar-item">
+              <a
+                class="button is-link toggles-menu"
+                href="#contact-me-section"
+                aria-label="Goto contact form"
+              >
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <p><strong>Contact Me</strong></p>
                 </span>
-                <h3 class="card-header-title">Tribute Page</h3>
-              </div>
-              <div class="card-image">
-                <figure class="image is-square">
-                  <img src="images/tribute-page-preview.jpg" alt="Tribute Page project preview image" height="1028"
-                    width="1028" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <p>A tribute to my family.</p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="column" aria-hidden="true"></div>
-      </div>
-    </section>
-    <!--End of Projects Section-->
-
-    <!--Credentials Section-->
-    <section class="section hero is-light has-background-grey-lighter" id="credentials-section">
-      <div class="container has-text-centered">
-        <h2 class="title">Credentials</h2>
-      </div>
-      <div class="columns is-centered">
-        <article class="column is-narrow section">
-          <h3 class="subtitle has-text-centered">Education</h3>
-          <div class="box">
-            <div class="columns is-centered is-vcentered is-mobile">
-              <div class="column is-narrow">
-                <figure class="image is-64x64">
-                  <img src="./images/southern-new-hampshire-university-logo.jpg"
-                    alt="Southern New Hampshire University Logo" height="512" width="512" />
-                </figure>
-              </div>
-              <div class="column">
-                <p><strong>Southern New Hampshire University</strong></p>
-                <p>BS Computer Science (in progress!)</p>
-              </div>
+              </a>
             </div>
           </div>
-        </article>
-        <article class="column is-narrow section">
-          <h3 class="subtitle has-text-centered">Certifications</h3>
-          <a href="https://www.freecodecamp.org/certification/lucasbecker451/responsive-web-design"
-            title="freeCodeCamp Responsive Web Design Certification"
-            aria-label="link to freeCodeCamp Responsive Web Design Certification">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a
+                class="button is-link is-danger toggles-menu"
+                href="https://ko-fi.com/lucasbecker_dev"
+                target="_blank"
+                rel="noopener"
+                aria-label="link to Ko-fi"
+              >
+                <span class="icon-text">
+                  <span class="icon">
+                    <img
+                      src="./images/icons/ko-fi-svgrepo-com.svg"
+                      alt="Ko-fi icon"
+                    />
+                  </span>
+                  <p>Support my work!</p>
+                </span>
+              </a>
+            </div>
+
+            <a
+              class="navbar-item toggles-menu"
+              href="https://github.com/lucasbecker-dev"
+              target="_blank"
+              rel="noopener"
+              aria-label="Github link"
+            >
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <p>Github</p>
+              </span>
+            </a>
+
+            <a
+              class="navbar-item toggles-menu"
+              href="https://www.linkedin.com/in/lucasbecker-dev/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn link"
+            >
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+                <p>LinkedIn</p>
+              </span>
+            </a>
+
+            <a
+              class="navbar-item toggles-menu"
+              href="https://twitter.com/lucasbecker_dev"
+              target="_blank"
+              rel="noopener"
+              aria-label="Twitter link"
+            >
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <p>Twitter</p>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--End of Navbar-->
+    <main id="main-content">
+      <!--About Section-->
+      <section class="section hero is-dark is-medium" id="about-section">
+        <h2 class="title has-text-centered">About</h2>
+        <div class="container">
+          <figure class="image is-128x128">
+            <img
+              class="is-rounded"
+              src="./images/80510809.jpeg"
+              alt="Lucas Becker's profile picture"
+              width="128"
+              height="128"
+            />
+          </figure>
+        </div>
+        <div class="container mt-4">
+          <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
+            Hi! I'm <strong class="has-text-primary">Lucas Becker</strong>, a
+            full-stack software and web developer. I'm enthusiastic about
+            programming and all things related.
+          </p>
+          <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
+            I'm also a fan of
+            <em>free and open-source software</em> and prefer to use it whenever
+            it's practical.
+          </p>
+          <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
+            Sometimes I like to make games, primarily with
+            <a
+              class="has-text-info"
+              href="https://godotengine.org/"
+              title="Godot Engine"
+              >Godot Engine</a
+            >.
+          </p>
+          <p class="is-size-5-desktop is-size-5-widescreen is-size-5-fullhd">
+            I particularly enjoy building websites and web apps. I'm currently
+            <span class="has-text-success"
+              ><strong>available for freelance jobs and contracts</strong></span
+            >.
+          </p>
+          <a
+            class="has-text-warning is-size-5-mobile is-size-5-tablet is-size-5-touch is-size-4-desktop is-size-4-widescreen is-size-4-fullhd"
+            href="#contact-me-section"
+            title="Contact Me"
+            >Send me an email with your contact information and project
+            details!</a
+          >
+        </div>
+      </section>
+      <!--End of About Section-->
+
+      <!--Portfolio Section-->
+      <section class="section hero is-light" id="portfolio-section">
+        <h2 class="title has-text-centered">Portfolio</h2>
+        <div class="columns is-centered">
+          <div class="column" aria-hidden="true"></div>
+          <article class="column">
+            <a
+              href="https://lucasbecker-dev.github.io/react-meetups-app"
+              title="React Meetups App"
+              aria-label="Goto react meetups app page"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <span class="card-header-icon">
+                    <i class="fas fa-handshake"></i>
+                  </span>
+                  <h3 class="card-header-title">React Meetups App</h3>
+                </div>
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img
+                      src="images/react-meetups-app.png"
+                      alt="React meetups app preview image"
+                      height="1028"
+                      width="1028"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p>React App for managing meetups.</p>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="column">
+            <a
+              href="./tindog.html"
+              title="Tindog"
+              aria-label="Goto tindog page"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <span class="card-header-icon">
+                    <i class="fas fa-dog"></i>
+                  </span>
+                  <h3 class="card-header-title">Tindog</h3>
+                </div>
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img
+                      src="images/tindog-preview.jpg"
+                      alt="Tindog project preview image"
+                      height="1028"
+                      width="1028"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p>Landing page for a mock web app.</p>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="column">
+            <a
+              href="./technicaldocs.html"
+              title="Technical Documentation"
+              aria-label="Goto technical documentation page"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <span class="card-header-icon">
+                    <i class="fas fa-book"></i>
+                  </span>
+                  <h3 class="card-header-title">Technical Documentation</h3>
+                </div>
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img
+                      src="images/technical-documentation-preview.jpg"
+                      alt="Technical documentation project preview image"
+                      height="1028"
+                      width="1028"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p>Technical documentation template.</p>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="column">
+            <a
+              href="./tributepage.html"
+              title="Tribute Page"
+              aria-label="Goto tribute page"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <span class="card-header-icon">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                  <h3 class="card-header-title">Tribute Page</h3>
+                </div>
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img
+                      src="images/tribute-page-preview.jpg"
+                      alt="Tribute Page project preview image"
+                      height="1028"
+                      width="1028"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p>A tribute to my family.</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="column" aria-hidden="true"></div>
+        </div>
+      </section>
+      <!--End of Projects Section-->
+
+      <!--Credentials Section-->
+      <section
+        class="section hero is-light has-background-grey-lighter"
+        id="credentials-section"
+      >
+        <div class="container has-text-centered">
+          <h2 class="title">Credentials</h2>
+        </div>
+        <div class="columns is-centered">
+          <article class="column is-narrow section">
+            <h3 class="subtitle has-text-centered">Education</h3>
             <div class="box">
               <div class="columns is-centered is-vcentered is-mobile">
                 <div class="column is-narrow">
                   <figure class="image is-64x64">
-                    <img src="./images/freecodecamp-logo.jpg" alt="freeCodeCamp Logo" />
+                    <img
+                      src="./images/southern-new-hampshire-university-logo.jpg"
+                      alt="Southern New Hampshire University Logo"
+                      height="512"
+                      width="512"
+                    />
                   </figure>
                 </div>
                 <div class="column">
-                  <p><strong>freeCodeCamp</strong></p>
-                  <p>Responsive Web Design</p>
+                  <p><strong>Southern New Hampshire University</strong></p>
+                  <p>BS Computer Science (in progress!)</p>
                 </div>
               </div>
             </div>
-          </a>
-          <a href="https://www.freecodecamp.org/certification/lucasbecker451/javascript-algorithms-and-data-structures"
-            title="freeCodeCamp Javascript and Algorithms and Data Structures"
-            aria-label="link to freeCodeCamp Javascript and Algorithms and Data Structures Certification">
-            <div class="box mt-2">
-              <div class="columns is-centered is-vcentered is-mobile">
-                <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="./images/freecodecamp-logo.jpg" alt="freeCodeCamp Logo" />
-                  </figure>
-                </div>
-                <div class="column">
-                  <p><strong>freeCodeCamp</strong></p>
-                  <p>Javascript Algorithms and Data Structures</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://www.freecodecamp.org/certification/lucasbecker451/scientific-computing-with-python-v7"
-            title="freeCodeCamp Scientific Computing With Python Certification"
-            aria-label="link to freeCodeCamp Scientific Computing With Python Certification">
-            <div class="box mt-2">
-              <div class="columns is-centered is-vcentered is-mobile">
-                <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="./images/freecodecamp-logo.jpg" alt="freeCodeCamp Logo" />
-                  </figure>
-                </div>
-                <div class="column">
-                  <p><strong>freeCodeCamp</strong></p>
-                  <p>Scientific Computing With Python</p>
+          </article>
+          <article class="column is-narrow section">
+            <h3 class="subtitle has-text-centered">Certifications</h3>
+            <a
+              href="https://www.freecodecamp.org/certification/lucasbecker451/responsive-web-design"
+              title="freeCodeCamp Responsive Web Design Certification"
+              aria-label="link to freeCodeCamp Responsive Web Design Certification"
+            >
+              <div class="box">
+                <div class="columns is-centered is-vcentered is-mobile">
+                  <div class="column is-narrow">
+                    <figure class="image is-64x64">
+                      <img
+                        src="./images/freecodecamp-logo.jpg"
+                        alt="freeCodeCamp Logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <p><strong>freeCodeCamp</strong></p>
+                    <p>Responsive Web Design</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    </section>
-    <!--End of Credentials Section-->
+            </a>
+            <a
+              href="https://www.freecodecamp.org/certification/lucasbecker451/javascript-algorithms-and-data-structures"
+              title="freeCodeCamp Javascript and Algorithms and Data Structures"
+              aria-label="link to freeCodeCamp Javascript and Algorithms and Data Structures Certification"
+            >
+              <div class="box mt-2">
+                <div class="columns is-centered is-vcentered is-mobile">
+                  <div class="column is-narrow">
+                    <figure class="image is-64x64">
+                      <img
+                        src="./images/freecodecamp-logo.jpg"
+                        alt="freeCodeCamp Logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <p><strong>freeCodeCamp</strong></p>
+                    <p>Javascript Algorithms and Data Structures</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.freecodecamp.org/certification/lucasbecker451/scientific-computing-with-python-v7"
+              title="freeCodeCamp Scientific Computing With Python Certification"
+              aria-label="link to freeCodeCamp Scientific Computing With Python Certification"
+            >
+              <div class="box mt-2">
+                <div class="columns is-centered is-vcentered is-mobile">
+                  <div class="column is-narrow">
+                    <figure class="image is-64x64">
+                      <img
+                        src="./images/freecodecamp-logo.jpg"
+                        alt="freeCodeCamp Logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <p><strong>freeCodeCamp</strong></p>
+                    <p>Scientific Computing With Python</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!--End of Credentials Section-->
 
-    <!-- Contact Section-->
-    <section class="section hero is-light" id="contact-me-section">
+      <!-- Contact Section-->
+      <section class="section hero is-light" id="contact-me-section">
+        <div class="container has-text-centered">
+          <h2 class="title">Contact Me</h2>
+        </div>
+        <div class="columns is-centered">
+          <form
+            id="contact-form"
+            class="column is-full-mobile is-three-quarters-tablet is-full-touch is-two-thirds-desktop is-half-widescreen is-half-fullhd"
+            action="https://formsubmit.co/52db9e589d2652583e7de5656d2bbbb7"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Contact Form Request" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://lucasbecker.dev/thanks"
+            />
+
+            <div class="field">
+              <label class="label" for="name-input">Name</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  id="name-input"
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                  autocomplete="name"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-handshake"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="email-input">Email</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  id="email-input"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="tel-input">Phone</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  id="tel-input"
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone number"
+                  autocomplete="tel"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-mobile-alt"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="preferred-contact-method"
+                >Preferred Contact Method</label
+              >
+              <div class="control">
+                <div class="select">
+                  <select id="preferred-contact-method" name="contact_pref">
+                    <option>Email</option>
+                    <option>Text</option>
+                    <option>Call</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="message-input">Message</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  id="message-input"
+                  name="message"
+                  placeholder="Please provide as much information about your project needs as you can."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link" type="submit" id="submit-form">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--End of Contact Me Section -->
+
+      <!--Footer-->
+    </main>
+    <footer class="footer hero is-dark">
       <div class="container has-text-centered">
-        <h2 class="title">Contact Me</h2>
+        <p>
+          <small
+            >Copyright © Lucas Becker 2021-2022. All rights reserved.</small
+          >
+        </p>
+        <br />
+        <a
+          href="https://bulma.io"
+          title="Made with Bulma"
+          aria-label="link to Bulma CSS framework"
+        >
+          <img
+            src="https://bulma.io/images/made-with-bulma.png"
+            alt="Made with Bulma"
+            width="128"
+            height="24"
+          />
+        </a>
       </div>
-      <div class="columns is-centered">
-        <form id="contact-form" class="
-              column
-              is-full-mobile
-              is-three-quarters-tablet
-              is-full-touch
-              is-two-thirds-desktop
-              is-half-widescreen
-              is-half-fullhd
-            " action="https://formsubmit.co/52db9e589d2652583e7de5656d2bbbb7" method="POST">
-          <input type="hidden" name="_subject" value="Contact Form Request" />
-          <input type="hidden" name="_next" value="https://lucasbecker.dev/thanks" />
+    </footer>
+    <!--End of Footer-->
 
-          <div class="field">
-            <label class="label" for="name-input">Name</label>
-            <div class="control has-icons-left">
-              <input class="input" id="name-input" name="name" type="text" placeholder="Name" autocomplete="name"
-                required />
-              <span class="icon is-small is-left">
-                <i class="fas fa-handshake"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="email-input">Email</label>
-            <div class="control has-icons-left">
-              <input class="input" id="email-input" name="email" type="email" placeholder="Email" autocomplete="email"
-                required />
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="tel-input">Phone</label>
-            <div class="control has-icons-left">
-              <input class="input" id="tel-input" name="phone" type="tel" placeholder="Phone number"
-                autocomplete="tel" />
-              <span class="icon is-small is-left">
-                <i class="fas fa-mobile-alt"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="preferred-contact-method">Preferred Contact Method</label>
-            <div class="control">
-              <div class="select">
-                <select id="preferred-contact-method" name="contact_pref">
-                  <option>Email</option>
-                  <option>Text</option>
-                  <option>Call</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="message-input">Message</label>
-            <div class="control">
-              <textarea class="textarea" id="message-input" name="message"
-                placeholder="Please provide as much information about your project needs as you can."></textarea>
-            </div>
-          </div>
-
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-link" type="submit" id="submit-form">
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!--End of Contact Me Section -->
-
-    <!--Footer-->
-  </main>
-  <footer class="footer hero is-dark">
-    <div class="container has-text-centered">
-      <p>
-        <small>Copyright © Lucas Becker 2021-2022. All rights reserved.</small>
-      </p>
-      <br />
-      <a href="https://bulma.io" title="Made with Bulma" aria-label="link to Bulma CSS framework">
-        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24" />
-      </a>
-    </div>
-  </footer>
-  <!--End of Footer-->
-
-  <!--Scripts-->
-  <!--<script src="" async defer></script>-->
-</body>
-
+    <!--Scripts-->
+    <!--<script src="" async defer></script>-->
+  </body>
 </html>
