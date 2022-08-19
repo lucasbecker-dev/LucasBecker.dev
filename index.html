@@ -67,7 +67,7 @@
         </div>
 
         <div class="navbar-menu" id="navbarMenu">
-          <div class="navbar-start">
+          <div class="navbar-end">
             <a
               class="navbar-item toggles-menu"
               href="#about-section"
@@ -106,8 +106,7 @@
                 </span>
               </a>
             </div>
-          </div>
-          <div class="navbar-end">
+
             <div class="navbar-item">
               <a
                 class="button is-link is-danger toggles-menu"
@@ -233,7 +232,35 @@
       <section class="section hero is-light" id="portfolio-section">
         <h2 class="title has-text-centered">Portfolio</h2>
         <div class="columns is-centered">
-          <div class="column" aria-hidden="true"></div>
+          <article class="column">
+            <a
+              href="https://next-events-demo-app.vercel.app/events"
+              title="Next.js Events Demo App"
+              aria-label="Goto next.js events demo app page"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <span class="card-header-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </span>
+                  <h3 class="card-header-title">Next.js Events Demo App</h3>
+                </div>
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img
+                      src="images/next-events-demo-app.png"
+                      alt="Next.js events demo app screenshot"
+                      height="1028"
+                      width="1028"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p>Next.js demo app for finding and filtering events.s</p>
+                </div>
+              </div>
+            </a>
+          </article>
           <article class="column">
             <a
               href="https://lucasbecker-dev.github.io/react-meetups-app"
@@ -353,7 +380,6 @@
               </div>
             </a>
           </article>
-          <div class="column" aria-hidden="true"></div>
         </div>
       </section>
       <!--End of Projects Section-->
