@@ -1,5 +1,5 @@
 :root {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -159,8 +159,7 @@ p {
 }
 
 /* Call to Action */
-#cta {
-}
+#cta {}
 
 .cta-heading {
     font-family: 'Montserrat', sans-serif;
@@ -170,8 +169,7 @@ p {
 }
 
 /* Footer */
-#footer {
-}
+#footer {}
 
 .contact-icons {
     margin: 20px 10px;
