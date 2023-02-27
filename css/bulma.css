@@ -10,6 +10,7 @@
 .pagination-next,
 .pagination-link,
 .pagination-ellipsis {
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
@@ -154,6 +155,7 @@ fieldset[disabled] .pagination-ellipsis {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   background-color: rgba(10, 10, 10, 0.2);
@@ -2798,6 +2800,7 @@ div.icon-text {
 }
 
 .progress {
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   border: none;
@@ -5916,6 +5919,7 @@ print {
   flex-direction: column;
   max-height: calc(100vh - 40px);
   overflow: hidden;
+  overflow-y: visible;
   -ms-overflow-y: visible;
 }
 
