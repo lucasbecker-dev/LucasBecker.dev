@@ -1,4 +1,4 @@
-// Copyright (c) Lucas Becker 2021-2022. All right reserved.
+// Copyright (c) Lucas Becker 2021-2023. All right reserved.
 (function () {
   "use strict";
 }());
